@@ -1,0 +1,15 @@
+/*Estillização da página de visualização
+    Autor: Glauco Azevedo
+*/
+#centerblock {
+    display: inline-block;
+}
+
+
+svg,
+#tiles {
+  position: absolute;
+  width: 960px;
+  height: 600px;
+  overflow: hidden;
+}

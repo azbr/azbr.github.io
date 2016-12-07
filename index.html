@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="iso-8859-1" />
+    <link href="estilos.css" rel="stylesheet" />
+    <script src="jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="https://d3js.org/d3.v3.js" type="text/javascript"></script>
+    <!-- <script src="//d3js.org/topojson.v1.min.js"></script> -->
+    <!-- <script src="mapa.js" type="text/javascript"></script> -->
+</head>
+
+<body>
+
+    <div id="topBar">
+        <h1>
+            Panorama Eleitoral - Municípios do RJ
+        </h1>
+    </div>
+    <div id="centerblock">
+        <div id="mainChart">
+        <div id="tiles"></div>
+    </div>
+    <div id="sankey">
+
+    </div>
+    </div>
+</body>
+
+    <script>
+
+        var width = 480,
+        height = 480;
+
+        var svg = d3.select("#mainChart").append("svg")
+        .attr("width", width)
+        .attr("height", height);
+         d3.json("estados.geojson", function(error, br) {
+             if (error) return console.error(error);
+             console.log(br);
+             svg.append("path")
+             .datum(topojson.feature(br, br.objects.subunits))
+             .attr("d", d3.geo.path().projection(d3.geo.mercator()));
+          });
+    </script>
+</html>
