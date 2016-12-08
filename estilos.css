@@ -1,15 +1,30 @@
-/*EstillizaÁ„o da p·gina de visualizaÁ„o
+/*Estilliza√ß√£o da p√°gina de visualiza√ß√£o
     Autor: Glauco Azevedo
 */
 #centerblock {
-    display: inline-block;
+    margin-left: 10%;
+    margin-right:10%;
+    position: fixed;
+    display: table-row;
 }
 
+#mapas{
+    display: table-cell;
+}
 
-svg,
-#tiles {
-  position: absolute;
-  width: 960px;
-  height: 600px;
-  overflow: hidden;
+#infobox{
+    display: table-cell;
+    text-align: center;
+    vertical-align: top;
+}
+
+#sankey{
+    display: table-cell;
+    border: 1px solid gray;
+}
+
+.cities {
+    /*fill: gray;*/
+    stroke: white;
+    stroke-linejoin: round;
 }

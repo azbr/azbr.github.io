@@ -1,74 +1,61 @@
 // Script de construção da chart
 $(document).ready(function(){
 
-    var pi = Math.PI,
-    tau = 2 * pi;
+        var width = 700, height = 500,
+            svg = d3.select("#mainChart")
+                    .attr("width",width)
+                    .attr("height",height)
+                    .style("border","1px solid gray");
 
-    var svg = d3.select("svg"),
-        width = +svg.attr("width"),
-        height = +svg.attr("height");
+        d3.queue()
+            .defer(d3.json,"rj-cidades.json")
+            .await(ready);
 
-    // Initialize the projection to fit the world in a 1×1 square centered at the origin.
-    var projection = d3.geoMercator()
-        .scale(1 / tau)
-        .translate([0, 0]);
+        function ready(error,br_states) {
+            if(error) return console.error(error);
 
-    // Compute the projected bounding box given a geographic bounding box (here, California).
-    // This assumes parallels are horizontal and meridians are vertical…
-    // but you could use path.bounds to handle arbitrary shapes.
-    // Note that the y-dimension is flipped relative to latitude!
-    var bounds = [
-            [-124.408585, 32.534291],
-            [-114.138271, 42.007768]
-        ],
-        p0 = projection([bounds[0][0], bounds[1][1]]),
-        p1 = projection([bounds[1][0], bounds[0][1]]);
+            var projection = d3.geo.mercator()
+                                .center([-42,-22])
+                                .scale(9500);
 
-    // Convert this to a scale k and translate tx, ty for the projection.
-    // For crisp image tiles, clamp to the nearest power of two.
-    var k = floor(0.95 / Math.max((p1[0] - p0[0]) / width, (p1[1] - p0[1]) / height)),
-        tx = (width - k * (p1[0] + p0[0])) / 2,
-        ty = (height - k * (p1[1] + p0[1])) / 2;
+            var color = d3.scale.sqrt().domain([4,25]).range(['red','blue']);
+            // A melhor forma de conseguir o efeito que desejo é setar as cores
+            // do meu jeito com as 7 categorias e abandonar o método acima.
 
-    projection
-        .scale(k / tau)
-        .translate([tx, ty]);
+            var path = d3.geo.path()
+                         .projection(projection);
 
-    // Lastly convert this to the corresponding tile.scale and tile.translate;
-    // see http://bl.ocks.org/mbostock/4150951 for a related example.
-    var tiles = d3.tile()
-        .size([width, height])
-        .scale(k)
-        .translate([tx, ty])
-        ();
+            var states = topojson.feature(br_states,br_states.objects.states);
+            console.log(states);
+            svg.append("g")
+                .attr("class","rj-state")
+                .selectAll("path")
+                .data(states.features)
+                .enter()
+                .append("path")
+                .attr("d",path)
+                .attr("class","cities")
+                .transition().delay(0)
+                .style("fill",function(d){
+                    return color(+d.properties.nome.length);
+                });
+        };
 
-    d3.select("#tiles")
-        .selectAll("img").data(tiles).enter().append("img")
-        .style("position", "absolute")
-        .attr("src", function(d, i) {
-            return "http://" + "abc" [d[1] % 3] + ".tile.openstreetmap.org/" + d[2] + "/" + d[0] + "/" + d[1] + ".png";
-        })
-        .style("left", function(d) {
-            return (d[0] + tiles.translate[0]) * tiles.scale + "px";
-        })
-        .style("top", function(d) {
-            return (d[1] + tiles.translate[1]) * tiles.scale + "px";
-        })
-        .attr("width", tiles.scale)
-        .attr("height", tiles.scale);
+        // Colocar os efeitos de hovering e informações de seleção, como o nome
+        // do Município e dar um highlight no contorno do Município.
+        // Executar o sankey chart ao clicar no município selecionado.
+        // Colocar o timelapse com os anos e slider(#timescroll) com uma estilização
+        // deve permitir um ajuste fino do que se vê.
 
-    d3.json("/mbostock/raw/4090846/us.json", function(error, us) {
-        if (error) throw error;
 
-        svg.append("path")
-            .datum(topojson.mesh(us, us.objects.states))
-            .attr("d", d3.geoPath().projection(projection))
-            .attr("fill", "none")
-            .attr("stroke", "#000");
-    });
-
-    function floor(k) {
-        return Math.pow(2, Math.floor(Math.log(k) / Math.LN2));
-    }
+        // var zoom = d3.behavior.zoom()
+        //             .scaleExtent(scaleExtent)
+        //             .scale(projection.scale())
+        //             .translate([0,0])               // not linked directly to projection
+        //             .on("zoom", redraw);
+        //
+        //             svg.selectAll('path')
+        //             .data(topojson.feature(world, world.objects.countries).features)
+        //           .enter().append('path')
 
 });
