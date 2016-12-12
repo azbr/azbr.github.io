@@ -2,7 +2,7 @@
 // by Glauco Azevedo - FGV/EMAp - Dez/2016
 // Curso de Visualização de Informação - profa.: Asla Sá
 var width = 700, height = 500;
-window.AnoAtual = 2016;
+window.AnoAtual = 2004;
 window.listaAnos = [2004,2008,2012,2016];
 window.descr = {1:"extrema-esquerda",
                 2:"esquerda",
@@ -24,14 +24,14 @@ var setAno = function(_) {
             $(".chartTitle").text("Prefeituras "+window.AnoAtual);
         }
         else {
-            console.log('ERRO: Opção Inválida!');
+            console.log('ERRO: Opï¿½ï¿½o Invï¿½lida!');
             return undefined;
         }
         console.log('Redesenhar!');
         redraw();
 
 };
-// Método para redesenhar a chart(na prática, só trocar as cores e valores de
+// Mï¿½todo para redesenhar a chart(na prï¿½tica, sï¿½ trocar as cores e valores de
 // atributos);
 var redraw = function() {
     d3.select("#mainChart")
@@ -93,14 +93,14 @@ var drawChart = function(svg,path,states) {
                 .style("opacity", 0);
         })
         .on("click",function(d){
-            // Chamada do metodo que desenhará o Sankey Chart de vereadores.
+            // Chamada do metodo que desenharï¿½ o Sankey Chart de vereadores.
             console.log("Cidade:"+d.properties.nome);
         });
 };
 // Parte principal do script
 $(document).ready(function(){
 
-        // Adicionando Listeners para alguns dos botões da página.
+        // Adicionando Listeners para alguns dos botï¿½es da pï¿½gina.
         $("#previous").on("click",function() {
             setAno('-');
         });
@@ -115,12 +115,12 @@ $(document).ready(function(){
             .defer(d3.json,"rj-cidades.json")// Leitura dos dados geograficos dos municï¿½pios do RJ
             .awaitAll(ready);
 
-        //Método que inicializa a chart e desenha
+        //Mï¿½todo que inicializa a chart e desenha
         function ready(error,dados) {
             if(error) return console.error(error);
             else{
-                    window.prefeitos = dados[0];//Devido ao paralelismo do carregamento, o arquivo de prefeitos carrega mais rápido e chega primeiro ao browser por ser menor;
-                    window.br_states = dados[1];//Consequentemente, os dados de fronteira dos Municípios chegam logo em seguida.
+                    window.prefeitos = dados[0];//Devido ao paralelismo do carregamento, o arquivo de prefeitos carrega mais rï¿½pido e chega primeiro ao browser por ser menor;
+                    window.br_states = dados[1];//Consequentemente, os dados de fronteira dos Municï¿½pios chegam logo em seguida.
                     var svg = d3.select("#mainChart")
                             .attr("width",width)
                             .attr("height",height);
