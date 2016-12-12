@@ -1,4 +1,4 @@
-/*EstillizaÃ§Ã£o da pÃ¡gina de visualizaÃ§Ã£o
+/*Estillização da página de visualização
     Autor: Glauco Azevedo
 */
 #pagediv{
@@ -23,7 +23,7 @@
 #timescroll{
     display: inline-table;
     position: fixed;
-    font: 14px sans-serif;
+    font: 20px sans-serif;
 }
 
 #previous, #next, #ano-atual{
@@ -35,6 +35,10 @@
     font-weight: bold;
 }
 
+#git{
+    width: 16px;
+}
+
 /* Estilos para a chart do RJ*/
 .cities {
     /*fill: gray;*/
@@ -42,7 +46,12 @@
     stroke-linejoin: round;
 }
 
-.chartTitle{
+path:hover{
+    stroke: rgb(234, 242, 87);
+    stroke-width: 2.5px;
+}
+
+.chartTitle, .chartTitle2{
     text-align: center;
     font-family: Helvetica,Arial,sans-serif;
     font-size: 2.0em;
@@ -62,7 +71,7 @@
     border-radius: 2px;
     pointer-events: none;
 }
-/*Estilos para a Sankey chart das eleiÃ§Ãµes para vereadores.*/
+/*Estilos para a Sankey chart das eleições para vereadores.*/
 #sankey{
     display: inline;
     /*border: 1px solid gray;*/

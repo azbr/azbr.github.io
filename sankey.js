@@ -1,5 +1,5 @@
-// C√≥digo de constru√ß√£o do Sankey Chart, que n√£o faz parte do
-// pacote padr√£o do d3.
+// CÛdigo de construÁ„o do Sankey Chart, que n„o faz parte do
+// pacote padr„o do d3.
 d3.sankey = function(width,height) {
   var sankey = {},
       nodeWidth = 24,

@@ -16,10 +16,12 @@ var setAno = function(_) {
         if( _ == '+' && window.AnoAtual < listaAnos[listaAnos.length-1] ){
             window.AnoAtual += 4;
             $("#ano-atual").text(window.AnoAtual);
+            $(".chartTitle").text("Prefeituras "+window.AnoAtual);
         }
         else if( _ == '-' && window.AnoAtual > listaAnos[0]) {
             window.AnoAtual -= 4;
             $("#ano-atual").text(window.AnoAtual);
+            $(".chartTitle").text("Prefeituras "+window.AnoAtual);
         }
         else {
             console.log('ERRO: Opção Inválida!');
@@ -29,6 +31,8 @@ var setAno = function(_) {
         redraw();
 
 };
+// Método para redesenhar a chart(na prática, só trocar as cores e valores de
+// atributos);
 var redraw = function() {
     d3.select("#mainChart")
       .selectAll("path")
@@ -72,6 +76,7 @@ var drawChart = function(svg,path,states) {
 
         d3.selectAll("path")
         .on("mouseover", function(d) {
+            // d.select().style("stroke","yellow");
             div.transition()
                 .duration(200)
                 .style("opacity", .9);
@@ -82,13 +87,14 @@ var drawChart = function(svg,path,states) {
                 .style("top", (d3.event.pageY - 28) + "px");
             })
         .on("mouseout", function(d) {
+            // d.select().style("stroke","white");
             div.transition()
                 .duration(400)
                 .style("opacity", 0);
         })
         .on("click",function(d){
             // Chamada do metodo que desenhará o Sankey Chart de vereadores.
-
+            console.log("Cidade:"+d.properties.nome);
         });
 };
 // Parte principal do script
@@ -113,12 +119,11 @@ $(document).ready(function(){
         function ready(error,dados) {
             if(error) return console.error(error);
             else{
-                    window.prefeitos = dados[0];//Devido ao paralelismo do carregamento, o arquivo de prefeitos carrega mais rï¿½pido e chega primeiro ao browser por ser menor;
-                    window.br_states = dados[1];//Consequentemente, os dados de fronteira dos Municï¿½pios chegam logo em seguida.
+                    window.prefeitos = dados[0];//Devido ao paralelismo do carregamento, o arquivo de prefeitos carrega mais rápido e chega primeiro ao browser por ser menor;
+                    window.br_states = dados[1];//Consequentemente, os dados de fronteira dos Municípios chegam logo em seguida.
                     var svg = d3.select("#mainChart")
                             .attr("width",width)
-                            .attr("height",height)
-                            .style("border","1px solid gray");
+                            .attr("height",height);
 
                     var projection = d3.geo.mercator()
                                         .center([-42,-22])
