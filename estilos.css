@@ -1,21 +1,45 @@
 /*Estillização da página de visualização
     Autor: Glauco Azevedo
 */
+#pagediv{
+}
+
+#topBar {
+    text-align:center;
+    font-family: sans-serif;
+}
+
 #centerblock {
     margin-left: 10%;
     margin-right:10%;
     position: fixed;
-    display: table-row;
+    display: inline-block;
 }
 
 #mapas{
-    display: table-cell;
+    display: inline;
 }
 
-#infobox{
-    display: table-cell;
+#timescroll{
+    display: inline-table;
+    position: fixed;
+    font: 14px sans-serif;
+}
+
+#previous, #next, #ano-atual{
+    display: inline;
+    margin-right: 2em;
     text-align: center;
-    vertical-align: top;
+}
+#ano-atual{
+    font-weight: bold;
+}
+
+/* Estilos para a chart do RJ*/
+.cities {
+    /*fill: gray;*/
+    stroke: white;
+    stroke-linejoin: round;
 }
 
 .chartTitle{
@@ -24,14 +48,44 @@
     font-size: 2.0em;
     font-weight: 700;
 }
-
-#sankey{
+.infobox{
     display: table-cell;
-    border: 1px solid gray;
+    text-align: center;
+    vertical-align: top;
+    position: absolute;
+    /*width: 60px;*/
+    /*height: 40px;*/
+    padding: 4px;
+    font: 12px sans-serif;
+    background: lightgreen;
+    border: 0px;
+    border-radius: 2px;
+    pointer-events: none;
+}
+/*Estilos para a Sankey chart das eleições para vereadores.*/
+#sankey{
+    display: inline;
+    /*border: 1px solid gray;*/
+}
+/*Teste*/
+.node rect {
+  cursor: move;
+  fill-opacity: .9;
+  shape-rendering: crispEdges;
 }
 
-.cities {
-    /*fill: gray;*/
-    stroke: white;
-    stroke-linejoin: round;
+.node text {
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff;
 }
+
+.link {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .2;
+}
+
+.link:hover {
+  stroke-opacity: .5;
+}
+/*Fim do teste*/

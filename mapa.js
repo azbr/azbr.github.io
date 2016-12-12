@@ -1,32 +1,55 @@
-// Script de construï¿½ï¿½o da chart
-
-window.AnoInicial = 2016;
+// Script de construção da chart do RJ
+// by Glauco Azevedo - FGV/EMAp - Dez/2016
+// Curso de Visualização de Informação - profa.: Asla Sá
+var width = 700, height = 500;
+window.AnoAtual = 2016;
 window.listaAnos = [2004,2008,2012,2016];
+window.descr = {1:"extrema-esquerda",
+                2:"esquerda",
+                3:"centro-esquerda",
+                4:"centro",
+                5:"centro-direita",
+                6:"direita",
+                7:"extrema-direita"};
 
-// A melhor forma de conseguir o efeito que desejo ï¿½ setar as cores
-// do meu jeito com as 7 categorias e abandonar o mï¿½todo acima.
-// var color = function(obj){
-//
-//         if(obj.ORIENTACAO == 1) return rgb(255, 0, 0);
-//         if(obj.ORIENTACAO == 2) return rgb(255, , 0);
-//         if(obj.ORIENTACAO == 3) return rgb(255, 0, 0);
-//         if(obj.ORIENTACAO == 4) return rgb(255, 0, 0);
-//         if(obj.ORIENTACAO == 5) return rgb(255, 0, 0);
-//         if(obj.ORIENTACAO == 6) return rgb(255, 0, 0);
-//         if(obj.ORIENTACAO == 7) return rgb(255, 0, 0);
-// };
-// var color = d3.scale.sqrt().domain([1,7]).range(['red','blue']);
+var setAno = function(_) {
+        if( _ == '+' && window.AnoAtual < listaAnos[listaAnos.length-1] ){
+            window.AnoAtual += 4;
+            $("#ano-atual").text(window.AnoAtual);
+        }
+        else if( _ == '-' && window.AnoAtual > listaAnos[0]) {
+            window.AnoAtual -= 4;
+            $("#ano-atual").text(window.AnoAtual);
+        }
+        else {
+            console.log('ERRO: Opção Inválida!');
+            return undefined;
+        }
+        console.log('Redesenhar!');
+        redraw();
+
+};
+var redraw = function() {
+    d3.select("#mainChart")
+      .selectAll("path")
+      .transition().delay(100)
+      .style("fill",function(d){
+          if(window.prefeitos[window.AnoAtual][d.properties.id])
+              return color(window.prefeitos[window.AnoAtual][d.properties.id].ORIENTACAO);
+      });
+}
+
 var color = d3.scale.linear()
-              .domain([1,7])
+              .domain([1,6])
               .interpolate(d3.interpolateRgb)
-              .range(["white", "black"])
+              .range(["red", "blue"]);
 // Metodo para construir a chart do estado, com os parï¿½metros setados no momento.
-var drawChart = function(svg,path,states,ano) {
-    console.log(ano);
+var drawChart = function(svg,path,states) {
+    // console.log(ano);
     svg.append("text")
-        .text("Eleições "+ano)
+        .text("Prefeituras "+window.AnoAtual)
         .attr("class","chartTitle")
-        .attr("transform","translate(250,30)");
+        .attr("transform","translate(220,30)");
     svg.append("g")
         .attr("class","rj-state")
         .selectAll("path")
@@ -39,80 +62,73 @@ var drawChart = function(svg,path,states,ano) {
         .transition().delay(0)
         .attr("sigla",function (d){return d.properties.sigla;})
         .style("fill",function(d){
-            if(prefeitos[ano][d.properties.id])
-                return color(prefeitos[ano][d.properties.id].ORIENTACAO);
+            if(window.prefeitos[window.AnoAtual][d.properties.id])
+                return color(window.prefeitos[window.AnoAtual][d.properties.id].ORIENTACAO);
         });
+
+        var div = d3.select("body").append("div")
+                    .attr("class", "infobox")
+                    .style("opacity", 0);
 
         d3.selectAll("path")
-        .on("mouseover",function(){
-        d3.select(this.nextSibling)
-            .append("rect")
-            .attr("class","infobox")
-            .attr("opacity", "0.8")
+        .on("mouseover", function(d) {
+            div.transition()
+                .duration(200)
+                .style("opacity", .9);
+            div.html(d.properties.nome+"</br>"+
+                     window.prefeitos[window.AnoAtual][d.properties.id].SIGLA+"</br>"+
+                     descr[window.prefeitos[window.AnoAtual][d.properties.id].ORIENTACAO])
+                .style("left", (d3.event.pageX) + "px")
+                .style("top", (d3.event.pageY - 28) + "px");
+            })
+        .on("mouseout", function(d) {
+            div.transition()
+                .duration(400)
+                .style("opacity", 0);
         })
-        .on("mouseout",function(){
-            d3.select(this)
-                .attr("opacity", "0")
+        .on("click",function(d){
+            // Chamada do metodo que desenhará o Sankey Chart de vereadores.
+
         });
-
-}
-
-// var color = d3.scale.sqrt().domain([4,25]).range(['red','blue']);
+};
 // Parte principal do script
 $(document).ready(function(){
 
-        var width = 700, height = 500,
-            svg = d3.select("#mainChart")
-                    .attr("width",width)
-                    .attr("height",height)
-                    .style("border","1px solid gray");
+        // Adicionando Listeners para alguns dos botões da página.
+        $("#previous").on("click",function() {
+            setAno('-');
+        });
+        $("#next").on("click",function() {
+            setAno('+');
+        });
+
+        $("#ano-atual").text(AnoAtual);
 
         d3.queue()
             .defer(d3.json,"prefeitos1.json")//Leitura dos dados dos prefeitos eleitos
-            .defer(d3.json,"rj-cidades.json")// Leitura dos dados geogrï¿½ficos dos municï¿½pios do RJ
+            .defer(d3.json,"rj-cidades.json")// Leitura dos dados geograficos dos municï¿½pios do RJ
             .awaitAll(ready);
 
-        //Mï¿½todo que inicializa a chart e desenha
+        //Método que inicializa a chart e desenha
         function ready(error,dados) {
             if(error) return console.error(error);
             else{
                     window.prefeitos = dados[0];//Devido ao paralelismo do carregamento, o arquivo de prefeitos carrega mais rï¿½pido e chega primeiro ao browser por ser menor;
                     window.br_states = dados[1];//Consequentemente, os dados de fronteira dos Municï¿½pios chegam logo em seguida.
+                    var svg = d3.select("#mainChart")
+                            .attr("width",width)
+                            .attr("height",height)
+                            .style("border","1px solid gray");
 
                     var projection = d3.geo.mercator()
                                         .center([-42,-22])
                                         .scale(9500);
 
-                    // var color = d3.scale.sqrt().domain([1,7]).range(['red','blue']);
                     var path = d3.geo.path()
                                  .projection(projection);
 
                     var states = topojson.feature(br_states,br_states.objects.states);
-
-                    drawChart(svg,path,states,AnoInicial);
+                    drawChart(svg,path,states);
                 }
         };
-
-        // function addMouseEvents(){
-        //     d3.selectAll("path")
-        //       .append()
-        // }
-
-        // Colocar os efeitos de hovering e informaï¿½ï¿½oes de seleï¿½ï¿½o, como o nome
-        // do Municï¿½pio e dar um highlight no contorno do MunicÃ­pio.
-        // Executar o sankey chart ao clicar no municï¿½ï¿½pio selecionado.
-        // Colocar o timelapse com os anos e slider(#timescroll) com uma estilizaÃ§Ã£o
-        // deve permitir um ajuste fino do que se vÃª.
-
-
-        // var zoom = d3.behavior.zoom()
-        //             .scaleExtent(scaleExtent)
-        //             .scale(projection.scale())
-        //             .translate([0,0])               // not linked directly to projection
-        //             .on("zoom", redraw);
-        //
-        //             svg.selectAll('path')
-        //             .data(topojson.feature(world, world.objects.countries).features)
-        //           .enter().append('path')
-
 });
