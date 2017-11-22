@@ -1,5 +1,5 @@
-// Esse arquivo será responsável por controlar a chart com os dados
-// das câmaras municipais.
+// Esse arquivo serï¿½ responsï¿½vel por controlar a chart com os dados
+// das cï¿½maras municipais.
 $().ready(function(){
 
     // Leitura dos dados dos vereadores
@@ -10,7 +10,7 @@ $().ready(function(){
     function ready3(error,vereadores) {
         // dados dos vereadores eleitos do RJ de 2004 a 2016
         window.vereadores = vereadores;
-        // AINDA NÃO FUNCIONA!
+        // AINDA NÃƒO FUNCIONA!
         // TODO: Consertar essa coisa.
         window.geraGrafo = function(d,anos,id){
 
@@ -62,9 +62,9 @@ $().ready(function(){
           .append("g")
             .attr("transform",
                   "translate(" + margin.left + "," + margin.top + ")");
-        // Coloca o título na chart
+        // Coloca o tÃ­tulo na chart
         svg.append("text")
-          .text("Câmara Municipal")
+          .text("CÃ¢mara Municipal")
           .attr("class","chartTitle2")
           .attr("transform","translate(220,30)");
 
@@ -113,7 +113,10 @@ $().ready(function(){
         sankey
             .nodes(graph.nodes)
             .links(graph.links)
-            .layout(32);
+            .layout([[[ 0.3724035   0.28953409  0.19519519  0.25625785]
+              [ 0.28953409  0.93759677  0.28310975  0.27197281]
+              [ 0.19519519  0.28310975  0.09549743  0.25497147]
+              [ 0.25625785  0.27197281  0.25497147  4.79375751]]32);
 
         // add in the links
         var link = svg.append("g").selectAll(".link")
