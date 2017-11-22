@@ -13,3 +13,8 @@ The main data source is the Tribunal Superior Eleitoral [TSE](http://www.tse.jus
 The other data were gathered on:<br />
 [Wikipedia](https://pt.wikipedia.org/wiki/Lista_de_partidos_pol%C3%ADticos_no_Brasil)<br />
 [IBGE](http://www.ibge.gov.br/home/)
+
+<p align="center">
+  Visualização:<br/>
+  <a href="http://azbr.github.io" > Eleições Municipais</a>
+</p>
