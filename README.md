@@ -1,12 +1,12 @@
 ## Eleições Municipais
-This project was developed during a course of my master.
-The main goal was to show the political scenario evolution along the last
+This project was started during a visualization course on my master.
+The main goal was to show the evolution in the political scenario along the past
 five elections on all **brazilian cities** with the help of the nice javascript library [d3.js](https://d3js.org/) and jQuery.
 
-This current release only shows the Rio de Janeiro State on a map.
-It is still in early development and at moment, the district chamber chart(sankey chart), is fixed only on the capital.
+This current release only shows the Rio de Janeiro State on a choropleth chart.
+It's still in early development at moment, with the district chamber chart(sankey chart), is fixed only on the capital.
 
-Later, it will have all the state to be chosen, having the possibility to looking at any city in the last five city elections.
+Later, it will have all the state to be chosen, having the possibility to look at any city with enough data over Brazil.
 
 The main data source is the Tribunal Superior Eleitoral [TSE](http://www.tse.jus.br/eleicoes/estatisticas/repositorio-de-dados-eleitorais), the major authority in brazilian electoral system.
 
