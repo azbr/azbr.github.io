@@ -1,5 +1,5 @@
 /*
-    Estillização da página de visualização
+    Estillizaï¿½ï¿½o da pï¿½gina de visualizaï¿½ï¿½o
     Autor: Glauco Azevedo
 */
 #pagediv{
@@ -11,27 +11,32 @@
 }
 
 #centerblock {
-    display: block;
+    display: -webkit-box;
     margin-left: 10%;
-    margin-right:10%;
-    position: fixed;
+    margin-right: 10%;
+    position: relative;
 }
 
 #mapas{
-    display: inline;
+    display: block;
+    margin: 2px 10px;
 }
 
-#timescroll{
-    display: inline-table;
-    position: fixed;
+#timescroll {
     font: 20px sans-serif;
+    margin: 10px auto 10px 200px;
 }
 
-#previous, #next, #ano-atual{
+#previous, #next, #ano-atual {
     display: inline;
-    margin-right: 2em;
+    margin: 0em 1.5em;
     text-align: center;
 }
+
+button#previous, button#next {
+    font-size: 15px;
+}
+
 #ano-atual{
     font-weight: bold;
 }
@@ -75,7 +80,7 @@ path:hover{
 /*Estilos para a Sankey chart das eleiï¿½ï¿½es para vereadores.*/
 #sankey{
     display: inline;
-    /*border: 1px solid gray;*/
+    margin: 2px 10px;
 }
 /*Teste*/
 .node rect {

@@ -1,6 +1,6 @@
-// Script de construção da chart do RJ
+// Script de construï¿½ï¿½o da chart do RJ
 // by Glauco Azevedo - FGV/EMAp - Dez/2016
-// Curso de Visualização de Informação - profa.: Asla Sá
+// Curso de Visualizaï¿½ï¿½o de Informaï¿½ï¿½o - profa.: Asla Sï¿½
 var width = 700, height = 500;
 window.AnoAtual = 2004;
 window.listaAnos = [2004,2008,2012,2016];
@@ -24,14 +24,14 @@ var setAno = function(_) {
             $(".chartTitle").text("Prefeituras "+window.AnoAtual);
         }
         else {
-            console.log('ERRO: Opção Inválida!');
+            console.log('ERRO: OpÃ§Ã£o InvÃ¡lida!');
             return undefined;
         }
         console.log('Redesenhar!');
         redraw();
 
 };
-// Método para redesenhar a chart(na prática, só trocar as cores e valores de
+// Mï¿½todo para redesenhar a chart(na prÃ¡tica, sÃ³ trocar as cores e valores de
 // atributos);
 var redraw = function() {
     d3.select("#mainChart")
@@ -47,7 +47,7 @@ var color = d3.scale.linear()
               .domain([1,6])
               .interpolate(d3.interpolateRgb)
               .range(["red", "blue"]);
-// Metodo para construir a chart do estado, com os parâmetros setados no momento.
+// Metodo para construir a chart do estado, com os parÃ¢metros setados no momento.
 var drawChart = function(svg,path,states) {
     // console.log(ano);
     svg.append("text")
@@ -93,14 +93,14 @@ var drawChart = function(svg,path,states) {
                 .style("opacity", 0);
         })
         .on("click",function(d){
-            // Chamada do metodo que desenhará o Sankey Chart de vereadores.
+            // Chamada do metodo que desenharï¿½ o Sankey Chart de vereadores.
             console.log("Cidade:"+d.properties.nome);
         });
 };
 // Parte principal do script
 $(document).ready(function(){
 
-        // Adicionando Listeners para alguns dos botões da página.
+        // Adicionando Listeners para alguns dos botï¿½es da pï¿½gina.
         $("#previous").on("click",function() {
             setAno('-');
         });
@@ -112,7 +112,7 @@ $(document).ready(function(){
 
         d3.queue()
             .defer(d3.json,"prefeitos1.json")//Leitura dos dados dos prefeitos eleitos
-            .defer(d3.json,"rj-cidades.json")// Leitura dos dados geograficos dos municípios do RJ
+            .defer(d3.json,"rj-cidades.json")// Leitura dos dados geograficos dos municï¿½pios do RJ
             .awaitAll(ready);
 
         //Mï¿½todo que inicializa a chart e desenha
