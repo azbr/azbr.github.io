@@ -134,9 +134,6 @@ $().ready(function () {
         };
       });
 
-
-
-
       sankey
         .nodes(graph.nodes)
         .links(graph.links)
@@ -146,7 +143,7 @@ $().ready(function () {
           [0.19519519, 0.28310975, 0.09549743, 0.25497147],
           [0.25625785, 0.27197281, 0.25497147, 4.79375751]
         ]);
-
+        
       // add in the links
       var link = svg.append("g").attr("transform",function() { return "translate(0,45)"})
         .selectAll(".link")
