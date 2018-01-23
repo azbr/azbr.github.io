@@ -1,12 +1,13 @@
-## Eleições Municipais
+# Eleições Municipais
+
+## Description
+
 This project was started during a visualization course on my master.
 The main goal was to show the evolution in the political scenario along the past
 five elections on all **brazilian cities** with the help of the nice javascript library [d3.js](https://d3js.org/) and jQuery.
 
 This current release only shows the Rio de Janeiro State on a choropleth chart.
-It's still in early development at moment, with the district chamber chart(sankey chart), is fixed only on the capital.
-
-Later, it will have all the state to be chosen, having the possibility to look at any city with enough data over Brazil.
+It still is in early development, with the district chamber chart(sankey chart) fixed only at the capital of state.
 
 The main data source is the Tribunal Superior Eleitoral [TSE](http://www.tse.jus.br/eleicoes/estatisticas/repositorio-de-dados-eleitorais), the major authority in brazilian electoral system.
 
@@ -18,3 +19,6 @@ The other data were gathered on:<br />
   Visualização:<br/>
   <a href="http://azbr.github.io" > Eleições Municipais</a>
 </p>
+
+## Authors
+- **Glauco Azevedo**
