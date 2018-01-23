@@ -78,9 +78,9 @@ $().ready(function () {
         "translate(" + margin.left + "," + margin.top + ")");
     // Coloca o título na chart
     svg.append("text")
-      .text("Câmara Municipal")
+      .text("Câmara Municipal do Rio")
       .attr("class", "chartTitle2")
-      .attr("transform", "translate(220,15)");
+      .attr("transform", "translate(160,15)");
 
     // Set the sankey diagram properties
     var sankey = d3.sankey(width, height)
