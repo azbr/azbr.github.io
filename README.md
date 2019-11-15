@@ -20,5 +20,20 @@ The other data were gathered on:<br />
   <a href="http://azbr.github.io" > Eleições Municipais</a>
 </p>
 
+## TODO 
+
+- [ ] - Converter esse todo para EN
+
+### Reparos
+- [ ] - Consertar o layout das divs principais;
+- [ ] - refazer o json do sankeychart;
+- [ ] - criar scripts de seleção do município para para sankey;
+
+### Novidades
+
+- [ ] - Aumentar a quantidade de shapefiles;
+- [ ] - Shapefiles armazenados em outro storage;
+- [ ] - Script permite zoom nos UFs e daí ver os municípios;
+ 
 ## Authors
 - **Glauco Azevedo**
