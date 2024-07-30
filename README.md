@@ -1,6 +1,6 @@
 # Eleições Municipais
 
-## Description
+### Description
 
 This project was started during a visualization course on my master.
 The main goal was to show the evolution in the political scenario along the past
@@ -20,11 +20,14 @@ The other data were gathered on:<br />
   <a href="http://azbr.github.io" > Eleições Municipais</a>
 </p>
 
-## TODO 
 
-[ ] Update scripts to the d3 latest;
-[ ] Implement better code standards;
-[ ] Update data sources with more recent data sets;
- 
-## Authors
-- **Glauco Azevedo**
+### Authors
+**<center>Glauco Azevedo</center>**
+
+---
+
+### Next Releases 
+
+- Update scripts to the d3 latest
+- Implement better code standards
+- Update data sources with more recent data sets
