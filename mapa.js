@@ -1,27 +1,45 @@
-// Script de constru��o da chart do RJ
+// Script de construção da chart do RJ
 // by Glauco Azevedo - FGV/EMAp - Dez/2016
-// Curso de Visualiza��o de Informa��o - profa.: Asla S�
-var width = 700, height = 500;
-window.AnoAtual = 2004;
-window.listaAnos = [2004,2008,2012,2016];
-window.descr = {1:"extrema-esquerda",
-                2:"esquerda",
-                3:"centro-esquerda",
-                4:"centro",
-                5:"centro-direita",
-                6:"direita",
-                7:"extrema-direita"};
+// Curso de Visualização de Informação - profa.: Asla Sá
+// const width = 700;
+// const height = 500;
+var dimensions = {
+    width: 700,
+    height: 500,
+};
 
-var setAno = function(_) {
-        if( _ == '+' && window.AnoAtual < listaAnos[listaAnos.length-1] ){
-            window.AnoAtual += 4;
-            $("#ano-atual").text(window.AnoAtual);
-            $(".chartTitle").text("Prefeituras "+window.AnoAtual);
+function listarAnos(anoInicial, numPeriodos) {
+    let anos = [];
+    for(let i = 0; i < numPeriodos; i++) {
+        anos.push(anoInicial);
+        anoInicial += 4;
+    }
+    return anos;
+}
+
+var anoInicial = 2004;
+var listaAnos = listarAnos(anoInicial, 4);
+const ENUM_ORIENTACAO = {
+    1: "extrema-esquerda",
+    2: "esquerda",
+    3: "centro-esquerda",
+    4: "centro",
+    5: "centro-direita",
+    6: "direita",
+    7: "extrema-direita"
+};
+window.ENUM_ORIENTACAO = ENUM_ORIENTACAO;
+
+let setAno = function(_) {
+        if( _ == '+' && anoInicial < listaAnos[listaAnos.length-1] ){
+            anoInicial += 4;
+            $("#ano-atual").text(anoInicial);
+            $(".chartTitle").text("Prefeituras "+anoInicial);
         }
-        else if( _ == '-' && window.AnoAtual > listaAnos[0]) {
-            window.AnoAtual -= 4;
-            $("#ano-atual").text(window.AnoAtual);
-            $(".chartTitle").text("Prefeituras "+window.AnoAtual);
+        else if( _ == '-' && anoInicial > listaAnos[0]) {
+            anoInicial -= 4;
+            $("#ano-atual").text(anoInicial);
+            $(".chartTitle").text("Prefeituras "+anoInicial);
         }
         else {
             console.log('ERRO: Opção Inválida!');
@@ -33,25 +51,25 @@ var setAno = function(_) {
 };
 // M�todo para redesenhar a chart(na prática, só trocar as cores e valores de
 // atributos);
-var redraw = function() {
+let redraw = function() {
     d3.select("#mainChart")
       .selectAll("path")
       .transition().delay(100)
       .style("fill",function(d){
-          if(window.prefeitos[window.AnoAtual][d.properties.id])
-              return color(window.prefeitos[window.AnoAtual][d.properties.id].ORIENTACAO);
+          if(window.prefeitos[anoInicial][d.properties.id])
+              return color(window.prefeitos[anoInicial][d.properties.id].ORIENTACAO);
       });
 }
 
-var color = d3.scale.linear()
+let color = d3.scale.linear()
               .domain([1,6])
               .interpolate(d3.interpolateRgb)
               .range(["red", "blue"]);
 // Metodo para construir a chart do estado, com os parâmetros setados no momento.
-var drawChart = function(svg,path,states) {
+let drawChart = function(svg,path,states) {
     // console.log(ano);
     svg.append("text")
-        .text("Prefeituras "+window.AnoAtual)
+        .text("Prefeituras "+anoInicial)
         .attr("class","chartTitle")
         .attr("transform","translate(220,30)");
     svg.append("g")
@@ -66,11 +84,11 @@ var drawChart = function(svg,path,states) {
         .transition().delay(0)
         .attr("sigla",function (d){return d.properties.sigla;})
         .style("fill",function(d){
-            if(window.prefeitos[window.AnoAtual][d.properties.id])
-                return color(window.prefeitos[window.AnoAtual][d.properties.id].ORIENTACAO);
+            if(window.prefeitos[anoInicial][d.properties.id])
+                return color(window.prefeitos[anoInicial][d.properties.id].ORIENTACAO);
         });
 
-        var div = d3.select("body").append("div")
+        let div = d3.select("body").append("div")
                     .attr("class", "infobox")
                     .style("opacity", 0);
 
@@ -81,8 +99,8 @@ var drawChart = function(svg,path,states) {
                 .duration(200)
                 .style("opacity", .9);
             div.html(d.properties.nome+"</br>"+
-                     window.prefeitos[window.AnoAtual][d.properties.id].SIGLA+"</br>"+
-                     descr[window.prefeitos[window.AnoAtual][d.properties.id].ORIENTACAO])
+                     window.prefeitos[anoInicial][d.properties.id].SIGLA+"</br>"+
+                     descr[window.prefeitos[anoInicial][d.properties.id].ORIENTACAO])
                 .style("left", (d3.event.pageX) + "px")
                 .style("top", (d3.event.pageY - 28) + "px");
             })
@@ -108,7 +126,7 @@ $(document).ready(function(){
             setAno('+');
         });
 
-        $("#ano-atual").text(AnoAtual);
+        $("#ano-atual").text(anoInicial);
 
         d3.queue()
             .defer(d3.json,"prefeitos1.json")//Leitura dos dados dos prefeitos eleitos
@@ -121,18 +139,18 @@ $(document).ready(function(){
             else{
                     window.prefeitos = dados[0];//Devido ao paralelismo do carregamento, o arquivo de prefeitos carrega mais r�pido e chega primeiro ao browser por ser menor;
                     window.br_states = dados[1];//Consequentemente, os dados de fronteira dos Munic�pios chegam logo em seguida.
-                    var svg = d3.select("#mainChart")
-                            .attr("width",width)
-                            .attr("height",height);
+                    const svg = d3.select("#mainChart")
+                            .attr("width", dimensions.width)
+                            .attr("height", dimensions.height);
 
-                    var projection = d3.geo.mercator()
+                    const projection = d3.geo.mercator()
                                         .center([-42,-22])
                                         .scale(9500);
 
-                    var path = d3.geo.path()
+                    const path = d3.geo.path()
                                  .projection(projection);
 
-                    var states = topojson.feature(br_states,br_states.objects.states);
+                    const states = topojson.feature(br_states,br_states.objects.states);
                     drawChart(svg,path,states);
                 }
         };

@@ -32,8 +32,8 @@ $().ready(function () {
               "name": d[anos[k + 1]] + "_" + d[anos[k + 1]][id].SIGLAS[i].ORIENTACAO
             }); +
             graph.links.push({
-              "source": window.descr[d[anos[k]][id].SIGLAS[i].ORIENTACAO],
-              "target": window.descr[d[anos[k + 1]][id].SIGLAS[i].ORIENTACAO],
+              "source": ENUM_ORIENTACAO[d[anos[k]][id].SIGLAS[i].ORIENTACAO],
+              "target": ENUM_ORIENTACAO[d[anos[k + 1]][id].SIGLAS[i].ORIENTACAO],
               "value": d[anos[k]][id].SIGLAS[i].CONT
             });
             // console.log(d[ano][id].SIGLAS);
