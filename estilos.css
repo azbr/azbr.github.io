@@ -1,14 +1,20 @@
 /*
-    Estilliza��o da p�gina de visualiza��o
+    Estillização da página de visualização
     Autor: Glauco Azevedo
 */
+p {
+    font-family: ui-rounded;
+    padding: 20px;
+    text-align: center;
+}
+
 #pagediv{
-    font-family: Helvetica,Arial,sans-serif;
+    font-family: sans-serif;
     margin: 2% 15%;
 }
 
 #topBar {
-    text-align:center;
+    text-align: center;
     font-family: sans-serif;
 }
 
@@ -16,21 +22,28 @@
     position: relative;
 }
 
-#mapas{
-    display: inline-block;
-    margin: 2px 10px;
-    float: left;
-}
-
 #timescroll {
     font: 20px sans-serif;
-    margin: 10px auto 10px 200px;
+    margin: 0px 10px;
+    display: flex;
+    height: fit-content;
+    align-items:  stretch;
+    width: 700px;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 #previous, #next, #ano-atual {
     display: inline;
     margin: 0em 1.5em;
     text-align: center;
+}
+
+#mainChart {
+    width: 1000px;
+    height: 500px;
+    margin: 0px 10px;
 }
 
 button#previous, button#next {
@@ -76,12 +89,19 @@ path:hover{
     border-radius: 2px;
     pointer-events: none;
 }
-/*Estilos para a Sankey chart das elei��es para vereadores.*/
-#sankey{
-    display: inline-block;
+
+#mapas, #sankey{
+    display: contents;
     margin: 2px 10px;
-    float: right;
+    float: left;
+    svg {
+        margin: 2% 20%;
+    }
+    #timescroll {
+        margin: 2% 20%;
+    }
 }
+
 /*Teste*/
 .node rect {
   cursor: move;
@@ -105,9 +125,24 @@ path:hover{
 }
 /*Fim do teste*/
 
-div#lista-features {
+#lista-features {
     display: block;
     position: relative;
     margin: 0% 10%;
     line-height: 1.6em;
+}
+
+/* #lista-features p {
+    text-align: left;
+    padding: 0;
+    font-family: sans-serif;
+} */
+
+#lista-features h2 {
+    font-size: 2.0em;
+    text-align: left;
+}
+
+.row-spacer {
+    height: 25px;
 }
