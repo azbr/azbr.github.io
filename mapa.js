@@ -72,7 +72,7 @@ let drawChart = function(svg,path,states) {
     svg.append("text")
         .text("Prefeituras "+anoInicial)
         .attr("class","chartTitle")
-        .attr("transform","translate(220,30)");
+        .attr("transform","translate(350,30)");
     svg.append("g")
         .attr("class","rj-state")
         .selectAll("path")
@@ -152,15 +152,17 @@ $(document).ready(function(){
                             .attr("width", dimensions.width)
                             .attr("height", dimensions.height);
 
-                    const projection = d3.geo.mercator()
-                                        .center([-42,-22])
-                                        .scale(9500);
+                    const projection = d3.geo
+                                        .mercator()
+                                        .center([-43,-22])
+                                        // .center([-42,-22])
+                                        .scale(8500);
 
                     const path = d3.geo.path()
                                  .projection(projection);
 
                     const states = topojson.feature(br_states, br_states.objects.states);
-                    drawChart(svg,path,states);
+                    drawChart(svg, path, states);
                 }
         };
 });

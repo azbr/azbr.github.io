@@ -28,7 +28,7 @@ p {
     display: flex;
     height: fit-content;
     align-items:  stretch;
-    width: 700px;
+    width: 1000px;
     align-content: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -96,6 +96,7 @@ path:hover{
     float: left;
     svg {
         margin: 2% 20%;
+        width: 1000px;
     }
     #timescroll {
         margin: 2% 20%;
