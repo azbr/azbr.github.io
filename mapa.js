@@ -56,8 +56,9 @@ let redraw = function() {
       .selectAll("path")
       .transition().delay(100)
       .style("fill",function(d){
-          if(window.prefeitos[anoInicial][d.properties.id])
-              return color(window.prefeitos[anoInicial][d.properties.id].ORIENTACAO);
+        let id = d.properties.id;
+        if(prefeitos[anoInicial][id])
+            return color(prefeitos[anoInicial][id].ORIENTACAO);
       });
 }
 
@@ -84,41 +85,49 @@ let drawChart = function(svg,path,states) {
         .transition().delay(0)
         .attr("sigla",function (d){return d.properties.sigla;})
         .style("fill",function(d){
-            if(window.prefeitos[anoInicial][d.properties.id])
-                return color(window.prefeitos[anoInicial][d.properties.id].ORIENTACAO);
+            if(prefeitos[anoInicial][d.properties.id])
+                return color(prefeitos[anoInicial][d.properties.id].ORIENTACAO);
         });
 
-        let div = d3.select("body").append("div")
+        let div = d3.select("body")
+                    .append("div")
                     .attr("class", "infobox")
                     .style("opacity", 0);
 
         d3.selectAll("path")
         .on("mouseover", function(d) {
-            // d.select().style("stroke","yellow");
+            const cidade = d.properties;
+            const msg = [
+                cidade.nome, 
+                prefeitos[anoInicial][cidade.id].SIGLA,
+                ENUM_ORIENTACAO[prefeitos[anoInicial][cidade.id].ORIENTACAO]
+            ].join("<br/>");
+
             div.transition()
-                .duration(200)
+                .duration(300)
                 .style("opacity", .9);
-            div.html(d.properties.nome+"</br>"+
-                     window.prefeitos[anoInicial][d.properties.id].SIGLA+"</br>"+
-                     descr[window.prefeitos[anoInicial][d.properties.id].ORIENTACAO])
-                .style("left", (d3.event.pageX) + "px")
-                .style("top", (d3.event.pageY - 28) + "px");
-            })
+
+            div.html(msg)
+                .style({
+                    "left": `${d3.event.pageX}px`,
+                    "top":  `${(d3.event.pageY - 28)}px`,
+                    "padding": "10px"
+                });
+        })
         .on("mouseout", function(d) {
-            // d.select().style("stroke","white");
             div.transition()
                 .duration(400)
                 .style("opacity", 0);
         })
         .on("click",function(d){
-            // Chamada do metodo que desenhar� o Sankey Chart de vereadores.
-            console.log("Cidade:"+d.properties.nome);
+            // Chamada do metodo que desenha o Sankey Chart de vereadores.
+            console.log(`Cidade: ${d.properties.nome}`);
         });
 };
 // Parte principal do script
 $(document).ready(function(){
 
-        // Adicionando Listeners para alguns dos bot�es da p�gina.
+        // Adicionando Listeners para alguns dos botões da página.
         $("#previous").on("click",function() {
             setAno('-');
         });
@@ -130,15 +139,15 @@ $(document).ready(function(){
 
         d3.queue()
             .defer(d3.json,"prefeitos1.json")//Leitura dos dados dos prefeitos eleitos
-            .defer(d3.json,"rj-cidades.json")// Leitura dos dados geograficos dos munic�pios do RJ
+            .defer(d3.json,"rj-cidades.json")// Leitura dos dados geograficos dos municípios do RJ
             .awaitAll(ready);
 
-        //M�todo que inicializa a chart e desenha
-        function ready(error,dados) {
+        //Método que inicializa a chart e desenha
+        function ready(error, dados) {
             if(error) return console.error(error);
             else{
-                    window.prefeitos = dados[0];//Devido ao paralelismo do carregamento, o arquivo de prefeitos carrega mais r�pido e chega primeiro ao browser por ser menor;
-                    window.br_states = dados[1];//Consequentemente, os dados de fronteira dos Munic�pios chegam logo em seguida.
+                    window.prefeitos = dados[0];
+                    window.br_states = dados[1];
                     const svg = d3.select("#mainChart")
                             .attr("width", dimensions.width)
                             .attr("height", dimensions.height);
@@ -150,7 +159,7 @@ $(document).ready(function(){
                     const path = d3.geo.path()
                                  .projection(projection);
 
-                    const states = topojson.feature(br_states,br_states.objects.states);
+                    const states = topojson.feature(br_states, br_states.objects.states);
                     drawChart(svg,path,states);
                 }
         };
