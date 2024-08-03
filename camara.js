@@ -51,9 +51,9 @@ $().ready(function () {
         top: 20,
         right: 10,
         bottom: 50,
-        left: 10
+        left: 150
       },
-      width = 700 - margin.left - margin.right,
+      width = 850 - margin.left - margin.right,
       height = 500 - margin.top - margin.bottom;
     console.log("Width " + width);
     console.log("Height " + height);
