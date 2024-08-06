@@ -10,16 +10,24 @@ p {
 
 #pagediv{
     font-family: sans-serif;
-    margin: 2% 15%;
+    margin: 2% 15% 2% -10%;
 }
 
 #topBar {
     text-align: center;
     font-family: sans-serif;
+    margin: 2% 20%;
+    width: 1000px;
 }
 
 #centerblock {
     position: relative;
+}
+
+#centerblock p {
+    text-align: center;
+    margin: 2% 20%;
+    width: 1000px;
 }
 
 #timescroll {
@@ -129,8 +137,10 @@ path:hover{
 #lista-features {
     display: block;
     position: relative;
-    margin: 0% 10%;
+    margin: 0% 20%;
+    width: 1000px;
     line-height: 1.6em;
+    padding: 0 0 0 10%;
 }
 
 /* #lista-features p {
@@ -145,5 +155,5 @@ path:hover{
 }
 
 .row-spacer {
-    height: 25px;
+    height: 20px;
 }
