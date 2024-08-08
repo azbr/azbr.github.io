@@ -53,19 +53,19 @@ let setAno = function(_) {
 // atributos);
 let redraw = function() {
     d3.select("#mainChart")
-      .selectAll("path")
-      .transition().delay(100)
-      .style("fill",function(d){
-        let id = d.properties.id;
-        if(prefeitos[anoInicial][id])
-            return color(prefeitos[anoInicial][id].ORIENTACAO);
-      });
+        .selectAll("path")
+        .transition().delay(100)
+        .style("fill",function(d){
+            let id = d.properties.id;
+            if(prefeitos[anoInicial][id])
+                return color(prefeitos[anoInicial][id].ORIENTACAO);
+        });
 }
 
 let color = d3.scale.linear()
-              .domain([1,6])
-              .interpolate(d3.interpolateRgb)
-              .range(["red", "blue"]);
+            .domain([1,6])
+            .interpolate(d3.interpolateRgb)
+            .range(["red", "blue"]);
 // Metodo para construir a chart do estado, com os parâmetros setados no momento.
 let drawChart = function(svg,path,states) {
     // console.log(ano);
@@ -127,42 +127,42 @@ let drawChart = function(svg,path,states) {
 // Parte principal do script
 $(document).ready(function(){
 
-        // Adicionando Listeners para alguns dos botões da página.
-        $("#previous").on("click",function() {
-            setAno('-');
-        });
-        $("#next").on("click",function() {
-            setAno('+');
-        });
+    // Adicionando Listeners para alguns dos botões da página.
+    $("#previous").on("click",function() {
+        setAno('-');
+    });
+    $("#next").on("click",function() {
+        setAno('+');
+    });
 
-        $("#ano-atual").text(anoInicial);
+    $("#ano-atual").text(anoInicial);
 
-        d3.queue()
-            .defer(d3.json,"prefeitos1.json")//Leitura dos dados dos prefeitos eleitos
-            .defer(d3.json,"rj-cidades.json")// Leitura dos dados geograficos dos municípios do RJ
-            .awaitAll(ready);
+    d3.queue()
+        .defer(d3.json,"prefeitos.json")//Leitura dos dados dos prefeitos eleitos
+        .defer(d3.json,"rj-cidades.json")// Leitura dos dados geograficos dos municípios do RJ
+        .awaitAll(ready);
 
-        //Método que inicializa a chart e desenha
-        function ready(error, dados) {
-            if(error) return console.error(error);
-            else{
-                    window.prefeitos = dados[0];
-                    window.br_states = dados[1];
-                    const svg = d3.select("#mainChart")
-                            .attr("width", dimensions.width)
-                            .attr("height", dimensions.height);
+    //Método que inicializa a chart e desenha
+    function ready(error, dados) {
+        if(error) return console.error(error);
+        else{
+                window.prefeitos = dados[0];
+                window.br_states = dados[1];
+                const svg = d3.select("#mainChart")
+                        .attr("width", dimensions.width)
+                        .attr("height", dimensions.height);
 
-                    const projection = d3.geo
-                                        .mercator()
-                                        .center([-43,-22])
-                                        // .center([-42,-22])
-                                        .scale(8500);
+                const projection = d3.geo
+                                    .mercator()
+                                    .center([-43,-22])
+                                    // .center([-42,-22])
+                                    .scale(8500);
 
-                    const path = d3.geo.path()
-                                 .projection(projection);
+                const path = d3.geo.path()
+                                .projection(projection);
 
-                    const states = topojson.feature(br_states, br_states.objects.states);
-                    drawChart(svg, path, states);
-                }
-        };
+                const states = topojson.feature(br_states, br_states.objects.states);
+                drawChart(svg, path, states);
+            }
+    };
 });
