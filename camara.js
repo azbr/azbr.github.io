@@ -20,11 +20,8 @@ $().ready(function () {
         "links": []
       };
       if (anos.length > 1) {
-        console.log('hello1!');
         for (var k = 0; k < anos.length - 1; k++) {
-          console.log("hello2");
           for (var i in d[anos[k]][id].SIGLAS) {
-            console.log('hello3!');
             graph.nodes.push({
               "name": d[anos[k]] + "_" + d[anos[k]][id].SIGLAS[i].ORIENTACAO
             });
@@ -46,8 +43,8 @@ $().ready(function () {
       return graph;
     };
 
-    var units = "Cadeiras";
-    var margin = {
+    const units = "Cadeiras";
+    const margin = {
         top: 20,
         right: 10,
         bottom: 50,
@@ -55,8 +52,8 @@ $().ready(function () {
       },
       width = 850 - margin.left - margin.right,
       height = 500 - margin.top - margin.bottom;
-    console.log("Width " + width);
-    console.log("Height " + height);
+    // console.log("Width " + width);
+    // console.log("Height " + height);
 
     var formatNumber = d3.format(",.0f"), // zero decimal places
       format = function (d) {
@@ -121,17 +118,15 @@ $().ready(function () {
         .map(graph.nodes));
 
       // loop through each link replacing the text with its index from node
-      graph.links.forEach(function (d, i) {
-        graph.links[i].source = graph.nodes.indexOf(graph.links[i].source);
-        graph.links[i].target = graph.nodes.indexOf(graph.links[i].target);
+      graph.links.forEach((d, i) => {
+        d.source = graph.nodes.indexOf(d.source);
+        d.target = graph.nodes.indexOf(d.target);
       });
 
       //now loop through each nodes to make nodes an array of objects
       // rather than an array of strings
-      graph.nodes.forEach(function (d, i) {
-        graph.nodes[i] = {
-          "name": d
-        };
+      graph.nodes.forEach((d, i) => {
+        graph.nodes[i] = {"name": d};
       });
 
       sankey
