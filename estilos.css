@@ -2,42 +2,40 @@
     Estillização da página de visualização
     Autor: Glauco Azevedo
 */
-p {
+
+
+#topBar p {
+    position: relative;
     font-family: ui-rounded;
-    padding: 20px;
     text-align: center;
+    font-size: 1.00em;
 }
 
-#pagediv{
+#pagediv {
     font-family: sans-serif;
-    margin: 2% 15% 2% -10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 
 #topBar {
     text-align: center;
     font-family: sans-serif;
-    margin: 2% 20%;
     width: 1000px;
 }
 
 #centerblock {
     position: relative;
-}
-
-#centerblock p {
-    text-align: center;
-    margin: 2% 20%;
-    width: 1000px;
+    max-width: 1000px;
 }
 
 #timescroll {
     font: 20px sans-serif;
-    margin: 0px 10px;
     display: flex;
     height: fit-content;
     align-items:  stretch;
-    width: 1000px;
-    align-content: center;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -51,7 +49,7 @@ p {
 #mainChart {
     width: 1000px;
     height: 500px;
-    margin: 0px 10px;
+    /* margin: 0px 10px; */
 }
 
 button#previous, button#next {
@@ -103,11 +101,7 @@ path:hover{
     margin: 2px 10px;
     float: left;
     svg {
-        margin: 2% 20%;
         width: 1000px;
-    }
-    #timescroll {
-        margin: 2% 20%;
     }
 }
 
@@ -140,14 +134,7 @@ path:hover{
     margin: 0% 20%;
     width: 1000px;
     line-height: 1.6em;
-    padding: 0 0 0 10%;
 }
-
-/* #lista-features p {
-    text-align: left;
-    padding: 0;
-    font-family: sans-serif;
-} */
 
 #lista-features h2 {
     font-size: 2.0em;
