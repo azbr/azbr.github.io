@@ -54,19 +54,18 @@ $().ready(function () {
       height = 500 - margin.top - margin.bottom;
     // console.log("Width " + width);
     // console.log("Height " + height);
-
-    var formatNumber = d3.format(",.0f"), // zero decimal places
-      format = function (d) {
-        return formatNumber(d) + " " + units;
-      },
-      // color = d3.scale.category20();
-      color = d3.scale.linear()
-      .domain([1, 6])
-      .interpolate(d3.interpolateRgb)
-      .range(["red", "blue"]);
+    function format(d) {
+      // zero decimal places
+      return d3.format(",.0f")(d) + " " + units;
+    }
+    
+    const color = d3.scale.linear()
+    .domain([1, 6])
+    .interpolate(d3.interpolateRgb)
+    .range(["red", "blue"]);
 
     // Inicializa o elemento SVG da chart
-    var svg = d3.select("#sankey").append("svg")
+    const svg = d3.select("#sankey").append("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
       .append("g")
