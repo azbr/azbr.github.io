@@ -14,7 +14,6 @@ $().ready(function () {
     // TODO: Consertar essa coisa.
     window.geraGrafo = function (d, anos, id) {
 
-      console.log(d);
       var graph = {
         "nodes": [],
         "links": []
@@ -43,50 +42,63 @@ $().ready(function () {
       return graph;
     };
 
+    const UPLOAD_FILENAME = "camara-rj.csv";
+    const CHART_TITLE = "Câmara Municipal do Rio";
     const units = "Cadeiras";
     const margin = {
         top: 20,
         right: 10,
         bottom: 50,
-        left: 150
+        left: 10
       },
-      width = 850 - margin.left - margin.right,
-      height = 500 - margin.top - margin.bottom;
-    // console.log("Width " + width);
-    // console.log("Height " + height);
+      chartWidth = 850,
+      chartHeight = 600;
+    
+    const sankey_nodes = [100, 55];
+    const sankey_links = [100, 55];
+    const title_position = [350, 25];
+
+    const initial_layout = [
+      [0.3724035, 0.28953409, 0.19519519, 0.25625785],
+      [0.28953409, 0.93759677, 0.28310975, 0.27197281],
+      [0.19519519, 0.28310975, 0.09549743, 0.25497147],
+      [0.25625785, 0.27197281, 0.25497147, 4.79375751]
+    ];
+
     function format(d) {
       // zero decimal places
       return d3.format(",.0f")(d) + " " + units;
     }
-    
+
+    function translate(x, y) { return `translate(${x}, ${y})` };
+
     const color = d3.scale.linear()
-    .domain([1, 6])
-    .interpolate(d3.interpolateRgb)
-    .range(["red", "blue"]);
+      .domain([1, 6])
+      .interpolate(d3.interpolateRgb)
+      .range(["red", "blue"]);
 
     // Inicializa o elemento SVG da chart
-    const svg = d3.select("#sankey").append("svg")
-      .attr("width", width + margin.left + margin.right)
-      .attr("height", height + margin.top + margin.bottom)
-      .append("g")
-      .attr("transform",
-        "translate(" + margin.left + "," + margin.top + ")");
+    const svg = d3
+      .select("#sankeyChart")
+      .attr("width", chartWidth)
+      .attr("height", chartHeight)
+      .append("g");
     // Coloca o título na chart
     svg.append("text")
-      .text("Câmara Municipal do Rio")
+      .text(CHART_TITLE)
       .attr("class", "chartTitle2")
-      .attr("transform", "translate(160,15)");
+      .attr("transform", translate(...title_position));
 
     // Set the sankey diagram properties
-    var sankey = d3.sankey(width, height)
-      .nodeWidth(36)
-      .nodePadding(25)
-      .size([width, height]);
+    var sankey = d3.sankey(chartWidth, chartHeight - 100)
+      .nodeWidth(50)
+      .nodePadding(30)
+      .size([chartWidth, chartHeight - 100]);
 
     var path = sankey.link();
 
     // load the data (using the timelyportfolio csv method)
-    d3.csv("camara-rj.csv", function (error, data) {
+    d3.csv(UPLOAD_FILENAME, function (error, data) {
 
       //set up graph in same style as original example but empty
       graph = {
@@ -130,15 +142,11 @@ $().ready(function () {
       sankey
         .nodes(graph.nodes)
         .links(graph.links)
-        .layout([
-          [0.3724035, 0.28953409, 0.19519519, 0.25625785],
-          [0.28953409, 0.93759677, 0.28310975, 0.27197281],
-          [0.19519519, 0.28310975, 0.09549743, 0.25497147],
-          [0.25625785, 0.27197281, 0.25497147, 4.79375751]
-        ]);
-        
+        .layout(initial_layout);
+
       // add in the links
-      var link = svg.append("g").attr("transform",function() { return "translate(0,45)"})
+      var link = svg.append("g")
+        .attr("transform", translate(...sankey_links))
         .selectAll(".link")
         .data(graph.links)
         .enter().append("path")
@@ -158,7 +166,8 @@ $().ready(function () {
         });
 
       // add in the nodes
-      var node = svg.append("g").attr("transform", function() { return "translate(0,45)"})
+      var node = svg.append("g")
+        .attr("transform", translate(...sankey_nodes))
         .selectAll(".node")
         .data(graph.nodes)
         .enter().append("g")
@@ -207,16 +216,17 @@ $().ready(function () {
           return d.name;
         })
         .filter(function (d) {
-          return d.x < width / 2;
+          return d.x < chartWidth / 2;
         })
         .attr("x", 6 + sankey.nodeWidth())
         .attr("text-anchor", "start");
 
       // the function for moving the nodes
       function dragmove(d) {
-        d3.select(this).attr("transform",
+        d3.select(this)
+        .attr("transform",
           "translate(" + d.x + "," + (
-            d.y = Math.max(0, Math.min(height - d.dy, d3.event.y))
+            d.y = Math.max(0, Math.min(chartHeight - d.dy, d3.event.y))
           ) + ")");
         sankey.relayout();
         link.attr("d", path);
