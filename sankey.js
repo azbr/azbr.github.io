@@ -1,5 +1,5 @@
-// CÛdigo de construÁ„o do Sankey Chart, que n„o faz parte do
-// pacote padr„o do d3.
+// C√≥digo de constru√ß√£o do Sankey Chart, que n√£o faz parte do
+// pacote padr√£o do d3.
 d3.sankey = function(width,height) {
   var sankey = {},
       nodeWidth = 24,
@@ -63,10 +63,10 @@ d3.sankey = function(width,height) {
           x3 = xi(1 - curvature),
           y0 = d.source.y + d.sy + d.dy / 2,
           y1 = d.target.y + d.ty + d.dy / 2;
-      return "M" + x0 + "," + y0
-           + "C" + x2 + "," + y0
-           + " " + x3 + "," + y1
-           + " " + x1 + "," + y1;
+      return "M" + x0 + "," + y0 
+      + "C" + x2 + "," + y0
+      + " " + x3 + "," + y1
+      + " " + x1 + "," + y1;
     }
 
     link.curvature = function(_) {
