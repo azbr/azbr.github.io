@@ -144,3 +144,7 @@ path:hover{
 .row-spacer {
     height: 20px;
 }
+
+.zero {
+    visibility: hidden;
+}
