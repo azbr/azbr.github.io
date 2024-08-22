@@ -52,15 +52,8 @@ function drawSankey(error, vereadores) {
   const sankey_links = [100, 55];
   const title_position = [350, 25];
 
-  const initial_layout = [
-    [0.37240350, 0.28953409, 0.19519519, 0.25625785],
-    [0.28953409, 0.93759677, 0.28310975, 0.27197281],
-    [0.19519519, 0.28310975, 0.09549743, 0.25497147],
-    [0.25625785, 0.27197281, 0.25497147, 4.79375751]
-  ];
-
+  // zero decimal places
   function format(d) {
-    // zero decimal places
     return d3.format(",.0f")(d) + " " + units;
   }
 
@@ -138,7 +131,7 @@ function drawSankey(error, vereadores) {
     sankey
       .nodes(graph.nodes)
       .links(graph.links)
-      .layout(initial_layout);
+      .layout([]);
 
     // add in the links
     var link = svg.append("g")
