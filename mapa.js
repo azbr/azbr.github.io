@@ -138,8 +138,8 @@ $(document).ready(function(){
     $("#ano-atual").text(anoInicial);
 
     d3.queue()
-        .defer(d3.json,"prefeitos.json")//Leitura dos dados dos prefeitos eleitos
-        .defer(d3.json,"rj-cidades.json")// Leitura dos dados geograficos dos municípios do RJ
+        .defer(d3.json,"data/prefeitos.json")//Leitura dos dados dos prefeitos eleitos
+        .defer(d3.json,"data/rj-cidades.json")// Leitura dos dados geograficos dos municípios do RJ
         .awaitAll(ready);
 
     //Método que inicializa a chart e desenha

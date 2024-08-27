@@ -36,7 +36,7 @@ function drawSankey(error, vereadores) {
   //   return graph;
   // };
 
-  const UPLOAD_FILENAME = "camara-rj.csv";
+  const UPLOAD_FILENAME = "data/camara-rj.csv";
   const CHART_TITLE = "Câmara Municipal do Rio";
   const units = "Cadeiras";
   const margin = {
