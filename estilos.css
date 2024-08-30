@@ -148,3 +148,9 @@ path:hover{
 .zero {
     visibility: hidden;
 }
+
+#uf-option {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px; /* Adjust this value to align with #mapas */
+}
