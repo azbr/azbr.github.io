@@ -204,7 +204,7 @@ function drawSankey(error, vereadores) {
 
 };
 
-$().ready(() => {
+document.addEventListener('DOMContentLoaded', () => {
   // Leitura dos dados dos vereadores
   // d3.queue()
   //   .defer(d3.json, "vereadores1.json")

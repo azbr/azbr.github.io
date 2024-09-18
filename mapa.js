@@ -33,13 +33,13 @@ window.ENUM_ORIENTACAO = ENUM_ORIENTACAO;
 let setAno = function(_) {
         if( _ == '+' && anoInicial < listaAnos[listaAnos.length-1] ){
             anoInicial += 4;
-            $("#ano-atual").text(anoInicial);
-            $(".chartTitle").text("Prefeituras "+anoInicial);
+            document.getElementById("ano-atual").textContent = anoInicial;
+            document.getElementsByClassName("chartTitle").textContent = "Prefeituras "+ anoInicial;
         }
         else if( _ == '-' && anoInicial > listaAnos[0]) {
             anoInicial -= 4;
-            $("#ano-atual").text(anoInicial);
-            $(".chartTitle").text("Prefeituras "+anoInicial);
+            document.getElementById("ano-atual").textContent = anoInicial;
+            document.getElementsByClassName("chartTitle").textContent = "Prefeituras "+ anoInicial;
         }
         else {
             console.log('ERRO: Opção Inválida!');
@@ -125,17 +125,17 @@ let drawChart = function(svg,path,states) {
         });
 };
 // Parte principal do script
-$(document).ready(function(){
+document.addEventListener('DOMContentLoaded', () => {
 
     // Adicionando Listeners para alguns dos botões da página.
-    $("#previous").on("click",function() {
+    document.getElementById("previous").addEventListener("click",function() {
         setAno('-');
     });
-    $("#next").on("click",function() {
+    document.getElementById("next").addEventListener("click",function() {
         setAno('+');
     });
 
-    $("#ano-atual").text(anoInicial);
+    document.getElementById("ano-atual").textContent = anoInicial;
 
     d3.queue()
         .defer(d3.json,"data/prefeitos.json")//Leitura dos dados dos prefeitos eleitos
