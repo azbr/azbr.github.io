@@ -1,33 +1,39 @@
-# Eleições Municipais
+# Panorama Eleitoral — newfront
 
-### Description
+Versão em TypeScript + D3 v7 do site de visualização das eleições municipais do Rio de Janeiro.
 
-This project was started during a visualization course on my master.
-The main goal was to show the evolution in the political scenario along the past
-five elections on all **brazilian cities** with the help of the nice javascript library [d3.js](https://d3js.org/) and jQuery.
+## Desenvolvimento
 
-This current release only shows the State of Rio de Janeiro on a choropleth chart.
-It still is in early development, with the district chamber chart(sankey chart) fixed only at the capital of state.
+```bash
+npm install
+npm test          # Vitest
+npm run typecheck
+npm run build     # gera dist/
+npm run preview   # serve dist/ em http://localhost:4173
+```
 
-The main data source is the Tribunal Superior Eleitoral [TSE](http://www.tse.jus.br/eleicoes/estatisticas/repositorio-de-dados-eleitorais), the major authority in brazilian electoral system.
+Abra `dist/index.html` via servidor estático (o `preview` ou extensão Live Server) para carregar `data/` corretamente.
 
-The other data were gathered on:<br />
-[Wikipedia](https://pt.wikipedia.org/wiki/Lista_de_partidos_pol%C3%ADticos_no_Brasil)<br />
-[IBGE](http://www.ibge.gov.br/home/)
+## Estrutura
 
-<p align="center">
-  Visualização:<br/>
-  <a href="http://azbr.github.io" > Eleições Municipais</a>
-</p>
+| Pasta | Conteúdo |
+|-------|----------|
+| `src/` | TypeScript (mapa, Sankey, dados) |
+| `public/` | HTML e CSS servidos em produção |
+| `data/` | JSON/CSV eleitorais (legado) |
+| `dist/` | Artefato de deploy (gitignored) |
+| `tests/` | Testes unitários |
 
+## Deploy
 
-### Authors
-**<center>Glauco Azevedo</center>**
+Push em `master` dispara o workflow GitHub Actions que executa testes, build e publica `dist/` no GitHub Pages.
 
----
+## Comportamento
 
-### Next Releases 
+- Mapa coroplético das prefeituras (2004–2016)
+- Clique em município: Sankey da câmara apenas para **Rio de Janeiro**
+- Outros municípios exibem mensagem até integração com pipeline TSE
 
-- Update scripts to the d3 latest
-- Implement better code standards
-- Update data sources with more recent data sets
+## Legado
+
+Os arquivos `mapa.js`, `sankey.js`, `camara.js` e `index.html` na raiz permanecem como referência até o merge em `dev`/`master`.
