@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const p = document.createElement("p");
       p.className = "app-error";
       p.textContent =
-        "Não foi possível carregar os dados. Execute npm run build e npm run preview (não abra o HTML como arquivo local).";
+        "Não foi possível carregar os dados. Use npm run dev ou npm run build && npm run preview.";
       main.prepend(p);
     }
   });
