@@ -16,18 +16,20 @@ function copyStatic() {
   cpSync(join(root, "data"), join(dist, "data"), { recursive: true });
 }
 
+const bundleOptions = {
+  entryPoints: [join(root, "src/main.ts")],
+  bundle: true,
+  outfile: join(dist, "assets/app.js"),
+  format: "iife",
+  platform: "browser",
+  target: "es2020",
+  sourcemap: true,
+  minify: !watchMode,
+  logLevel: "info",
+};
+
 async function bundle() {
-  await esbuild.build({
-    entryPoints: [join(root, "src/main.ts")],
-    bundle: true,
-    outfile: join(dist, "assets/app.js"),
-    format: "iife",
-    platform: "browser",
-    target: "es2020",
-    sourcemap: true,
-    minify: !watchMode,
-    logLevel: "info",
-  });
+  await esbuild.build(bundleOptions);
 }
 
 async function build() {
@@ -38,16 +40,7 @@ async function build() {
 
 if (watchMode) {
   copyStatic();
-  const ctx = await esbuild.context({
-    entryPoints: [join(root, "src/main.ts")],
-    bundle: true,
-    outfile: join(dist, "assets/app.js"),
-    format: "iife",
-    platform: "browser",
-    target: "es2020",
-    sourcemap: true,
-    logLevel: "info",
-  });
+  const ctx = await esbuild.context(bundleOptions);
   await ctx.watch();
   console.log("Watching…");
 } else {

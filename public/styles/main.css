@@ -65,10 +65,21 @@ body {
 
 #mainChart,
 #sankeyChart {
-  display: block;
   width: 100%;
   max-width: var(--max-width);
   height: auto;
+}
+
+#mainChart {
+  display: block;
+}
+
+#sankeyChart {
+  display: none;
+}
+
+#sankeyChart.is-visible {
+  display: block;
 }
 
 #timescroll {

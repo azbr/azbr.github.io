@@ -1,5 +1,5 @@
-import { interpolateRgb } from "d3";
-import { scaleLinear } from "d3";
+import { interpolateRgb, scaleLinear } from "d3";
+import { parseSankeyNodeName } from "./years";
 
 const orientationScale = scaleLinear<string>()
   .domain([1, 6])
@@ -12,7 +12,6 @@ export function orientacaoToColor(orientacao: number): string {
 }
 
 export function orientacaoFromSankeyNodeName(name: string): number {
-  const digit = name.charAt(6);
-  const value = Number(digit);
-  return Number.isFinite(value) ? value : 4;
+  const parsed = parseSankeyNodeName(name);
+  return parsed?.orientacao ?? 4;
 }

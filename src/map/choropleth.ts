@@ -99,6 +99,12 @@ export class ChoroplethMap {
     this.pathLayer.classed("selected", (d) => String(d.properties.id) === id);
   }
 
+  /** Seleciona município e dispara o callback (ex.: ao iniciar com o Rio). */
+  selectCityAndNotify(city: CitySelection): void {
+    this.selectCity(city.id);
+    this.onCitySelect?.(city);
+  }
+
   stepYear(delta: "+" | "-"): void {
     const idx = this.listaAnos.indexOf(this.currentYear);
     if (delta === "+" && idx < this.listaAnos.length - 1) {

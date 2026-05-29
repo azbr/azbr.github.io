@@ -4,15 +4,23 @@ Versão em TypeScript + D3 v7 do site de visualização das eleições municipai
 
 ## Desenvolvimento
 
+Fluxo recomendado (dados carregados via HTTP a partir de `dist/data/`):
+
 ```bash
 npm install
-npm test          # Vitest
-npm run typecheck
-npm run build     # gera dist/
-npm run preview   # serve dist/ em http://localhost:4173
+npm run build
+npm run preview   # http://localhost:4173
 ```
 
-Abra `dist/index.html` via servidor estático (o `preview` ou extensão Live Server) para carregar `data/` corretamente.
+Outros comandos:
+
+```bash
+npm test
+npm run typecheck
+npm run watch     # rebuild ao editar src/
+```
+
+**Não abra `dist/index.html` direto no navegador (`file://`).** O `fetch` dos arquivos em `data/` exige um servidor estático — use sempre `npm run preview` após o build.
 
 ## Estrutura
 
@@ -20,7 +28,7 @@ Abra `dist/index.html` via servidor estático (o `preview` ou extensão Live Ser
 |-------|----------|
 | `src/` | TypeScript (mapa, Sankey, dados) |
 | `public/` | HTML e CSS servidos em produção |
-| `data/` | JSON/CSV eleitorais (legado) |
+| `data/` | JSON/CSV eleitorais (copiados para `dist/data/` no build) |
 | `dist/` | Artefato de deploy (gitignored) |
 | `tests/` | Testes unitários |
 

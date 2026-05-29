@@ -47,32 +47,38 @@ export class CouncilSankey {
 
   showEmptyState(): void {
     this.clearChart();
-    this.svg.attr("hidden", "").style("display", "none");
+    this.svg.classed("is-visible", false).attr("aria-hidden", "true").style("display", null);
     this.messageEl.hidden = false;
     this.messageEl.textContent =
-      "Selecione um município no mapa para ver a composição da câmara municipal.";
+      "Selecione o município do Rio de Janeiro no mapa para ver a composição da câmara municipal.";
     this.messageEl.className = "sankey-message sankey-message--hint";
   }
 
   showUnavailable(cityName: string): void {
     this.clearChart();
-    this.svg.attr("hidden", "").style("display", "none");
+    this.svg.classed("is-visible", false).attr("aria-hidden", "true").style("display", null);
     this.messageEl.hidden = false;
     this.messageEl.textContent = `Dados da câmara municipal de ${cityName} ainda não estão disponíveis. Por enquanto, apenas o Rio de Janeiro.`;
     this.messageEl.className = "sankey-message sankey-message--warn";
   }
 
   render(graph: AppSankeyGraph, title: string): void {
+    if (!graph.nodes.length || !graph.links.length) {
+      console.warn("Sankey: grafo vazio");
+      this.showEmptyState();
+      return;
+    }
+
     this.clearChart();
     this.messageEl.hidden = true;
-    this.svg.attr("hidden", null).style("display", "block");
+    this.svg.classed("is-visible", true).attr("aria-hidden", "false").style("display", null);
 
     const layoutGraph = {
       nodes: graph.nodes.map((n) => ({ name: n.name })),
       links: graph.links.map((l) => ({
         source: l.source as number,
         target: l.target as number,
-        value: l.value,
+        value: Math.max(0, l.value),
       })),
     };
 
@@ -94,9 +100,9 @@ export class CouncilSankey {
       .attr("stroke", "#000")
       .attr("stroke-opacity", 0.2)
       .selectAll<SVGPathElement, LayoutLink>("path")
-      .data(laidOut.links)
+      .data(laidOut.links.filter((l) => l.value > 0))
       .join("path")
-      .attr("class", (d) => (d.value ? "link" : "link zero"))
+      .attr("class", "link")
       .attr("d", sankeyLinkHorizontal())
       .attr("stroke-width", (d) => Math.max(1, d.width ?? 0));
 
@@ -123,16 +129,16 @@ export class CouncilSankey {
       .append("g")
       .attr("transform", "translate(100,55)")
       .selectAll<SVGGElement, LayoutNode>("g")
-      .data(laidOut.nodes)
+      .data(laidOut.nodes.filter((n) => (n.value ?? 0) > 0))
       .join("g")
-      .attr("class", (d) => (d.value ? "node" : "node zero"))
+      .attr("class", "node")
       .attr("transform", (d) => `translate(${d.x0 ?? 0},${d.y0 ?? 0})`)
       .call(nodeDrag);
 
     node
       .append("rect")
       .attr("height", (d) => Math.max(1, (d.y1 ?? 0) - (d.y0 ?? 0)))
-      .attr("width", (d) => (d.x1 ?? 0) - (d.x0 ?? 0))
+      .attr("width", (d) => Math.max(1, (d.x1 ?? 0) - (d.x0 ?? 0)))
       .style("fill", (d) => orientacaoToColor(orientacaoFromSankeyNodeName(d.name)))
       .style("stroke", (d) => orientacaoToColor(orientacaoFromSankeyNodeName(d.name)))
       .append("title")
