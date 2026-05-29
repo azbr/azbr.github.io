@@ -3,30 +3,22 @@ import {
   sankey,
   sankeyJustify,
   sankeyLinkHorizontal,
+  type SankeyLink,
+  type SankeyNode,
 } from "d3-sankey";
 import { SANKEY_HEIGHT, SANKEY_WIDTH } from "../config";
 import type { SankeyGraph as AppSankeyGraph } from "../types/election";
 import { orientacaoFromSankeyNodeName, orientacaoToColor } from "../utils/colors";
 
-interface LayoutNode {
-  name: string;
-  x0?: number;
-  x1?: number;
-  y0?: number;
-  y1?: number;
-  value?: number;
-}
-
-interface LayoutLink {
-  source: LayoutNode | number;
-  target: LayoutNode | number;
-  value: number;
-  width?: number;
-}
+type LayoutNode = SankeyNode<{}, {}> & { name: string };
+type LayoutLink = SankeyLink<LayoutNode, {}>;
 
 const UNITS = "Cadeiras";
 const MARGIN = { top: 20, right: 10, bottom: 50, left: 10 };
 const INNER_HEIGHT = SANKEY_HEIGHT - 100;
+/** Mesmo deslocamento do site legado (camara.js) */
+const CHART_OFFSET_X = 100;
+const CHART_OFFSET_Y = 55;
 
 export class CouncilSankey {
   private readonly svg: Selection<SVGSVGElement, unknown, null, undefined>;
@@ -91,51 +83,50 @@ export class CouncilSankey {
         [SANKEY_WIDTH - MARGIN.right, INNER_HEIGHT],
       ]);
 
-    const laidOut = layout(layoutGraph);
+    const { nodes, links } = layout(layoutGraph);
+    const linkPath = sankeyLinkHorizontal();
+    const activeLinks = links.filter((l) => l.value > 0);
+    const activeNodes = nodes.filter((n) => (n.value ?? 0) > 0);
+    const graphForUpdate = { nodes: activeNodes, links: activeLinks };
 
-    const linkG = this.chartG
+    const innerG = this.chartG
       .append("g")
-      .attr("transform", "translate(100,55)")
+      .attr("class", "sankey-inner")
+      .attr("transform", `translate(${CHART_OFFSET_X},${CHART_OFFSET_Y})`);
+
+    const dragContainer = innerG.node()!;
+
+    const linkSelection = innerG
+      .append("g")
+      .attr("class", "sankey-links")
       .attr("fill", "none")
       .attr("stroke", "#000")
       .attr("stroke-opacity", 0.2)
+      .style("pointer-events", "none")
       .selectAll<SVGPathElement, LayoutLink>("path")
-      .data(laidOut.links.filter((l) => l.value > 0))
+      .data(activeLinks)
       .join("path")
-      .attr("class", "link")
-      .attr("d", sankeyLinkHorizontal())
-      .attr("stroke-width", (d) => Math.max(1, d.width ?? 0));
+      .attr("class", (d) => (d.value ? "link" : "link zero"))
+      .attr("d", linkPath)
+      .attr("stroke-width", (d) => Math.max(1, d.width ?? 0))
+      .sort((a, b) => (b.width ?? 0) - (a.width ?? 0));
 
-    linkG.append("title").text((d) => {
+    linkSelection.append("title").text((d) => {
       const s = d.source as LayoutNode;
       const t = d.target as LayoutNode;
       return `${s.name} → ${t.name}\n${d.value}`;
     });
 
-    const nodeDrag = drag<SVGGElement, LayoutNode>()
-      .subject((d) => d)
-      .on("drag", (event, d) => {
-        const height = (d.y1 ?? 0) - (d.y0 ?? 0);
-        d.y0 = Math.max(0, Math.min(INNER_HEIGHT - height, event.y));
-        d.y1 = (d.y0 ?? 0) + height;
-        select(event.sourceEvent.target.parentNode as SVGGElement).attr(
-          "transform",
-          `translate(${d.x0 ?? 0},${d.y0 ?? 0})`,
-        );
-        linkG.attr("d", sankeyLinkHorizontal());
-      });
-
-    const node = this.chartG
+    const nodeSelection = innerG
       .append("g")
-      .attr("transform", "translate(100,55)")
+      .attr("class", "sankey-nodes")
       .selectAll<SVGGElement, LayoutNode>("g")
-      .data(laidOut.nodes.filter((n) => (n.value ?? 0) > 0))
+      .data(activeNodes)
       .join("g")
-      .attr("class", "node")
-      .attr("transform", (d) => `translate(${d.x0 ?? 0},${d.y0 ?? 0})`)
-      .call(nodeDrag);
+      .attr("class", (d) => ((d.value ?? 0) > 0 ? "node" : "node zero"))
+      .attr("transform", (d) => `translate(${d.x0 ?? 0},${d.y0 ?? 0})`);
 
-    node
+    nodeSelection
       .append("rect")
       .attr("height", (d) => Math.max(1, (d.y1 ?? 0) - (d.y0 ?? 0)))
       .attr("width", (d) => Math.max(1, (d.x1 ?? 0) - (d.x0 ?? 0)))
@@ -144,7 +135,7 @@ export class CouncilSankey {
       .append("title")
       .text((d) => `${d.name}\n${formatValue(d.value ?? 0)}`);
 
-    node
+    nodeSelection
       .append("text")
       .attr("x", -6)
       .attr("y", (d) => ((d.y1 ?? 0) - (d.y0 ?? 0)) / 2)
@@ -154,6 +145,32 @@ export class CouncilSankey {
       .filter((d) => (d.x0 ?? 0) < SANKEY_WIDTH / 2)
       .attr("x", (d) => (d.x1 ?? 0) - (d.x0 ?? 0) + 6)
       .attr("text-anchor", "start");
+
+    const nodeDrag = drag<SVGRectElement, LayoutNode>()
+      .container(() => dragContainer)
+      .subject(function (_event, d) {
+        return { x: d.x0 ?? 0, y: d.y0 ?? 0 };
+      })
+      .on("start", function () {
+        select(this.parentNode as SVGGElement).raise();
+      })
+      .on("drag", function (event, d) {
+        const nodeHeight = (d.y1 ?? 0) - (d.y0 ?? 0);
+        const y = Math.max(
+          MARGIN.top,
+          Math.min(INNER_HEIGHT - nodeHeight, event.y),
+        );
+        d.y0 = y;
+        d.y1 = y + nodeHeight;
+        select(this.parentNode as SVGGElement).attr(
+          "transform",
+          `translate(${d.x0 ?? 0},${y})`,
+        );
+        layout.update(graphForUpdate);
+        linkSelection.attr("d", linkPath);
+      });
+
+    nodeSelection.selectAll<SVGRectElement, LayoutNode>("rect").call(nodeDrag);
 
     this.chartG
       .append("text")

@@ -176,6 +176,10 @@ body {
   text-shadow: 0 1px 0 #fff;
 }
 
+.sankey-links {
+  pointer-events: none;
+}
+
 .link {
   fill: none;
   stroke: #000;
