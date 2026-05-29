@@ -4,12 +4,12 @@
   "private": true,
   "description": "Panorama eleitoral RJ — TypeScript + D3 v7",
   "scripts": {
+    "dev": "vite",
     "build": "node scripts/build.mjs",
-    "watch": "node scripts/build.mjs --watch",
+    "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "test:watch": "vitest",
-    "preview": "npx --yes serve dist -p 4173"
+    "test:watch": "vitest"
   },
   "dependencies": {
     "d3": "^7.9.0",
@@ -18,13 +18,14 @@
   },
   "devDependencies": {
     "@types/d3": "^7.4.3",
-    "@types/geojson": "^7946.0.16",
     "@types/d3-sankey": "^0.12.4",
+    "@types/geojson": "^7946.0.16",
     "@types/node": "^22.10.0",
     "@types/topojson-client": "^3.1.5",
     "@types/topojson-specification": "^1.0.5",
-    "esbuild": "^0.24.0",
+    "sirv": "^3.0.0",
     "typescript": "^5.7.2",
+    "vite": "^6.0.3",
     "vitest": "^2.1.8"
   }
 }
