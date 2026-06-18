@@ -3,6 +3,8 @@
   --color-right: #4575b4;
   --color-focus: #234;
   --max-width: 1000px;
+  --viz-max-width: 1900px;
+  --sankey-column-width: 850px;
   --font-sans: system-ui, sans-serif;
 }
 
@@ -38,7 +40,7 @@ body {
 
 #topBar {
   text-align: center;
-  max-width: var(--max-width);
+  max-width: var(--viz-max-width);
   width: 100%;
 }
 
@@ -49,37 +51,51 @@ body {
 
 #centerblock {
   width: 100%;
+  max-width: var(--viz-max-width);
+}
+
+.viz-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, var(--sankey-column-width));
+  gap: 1rem;
+  align-items: start;
+  margin: 1.5rem 0;
+}
+
+@media (max-width: 1100px) {
+  .viz-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+#mapas,
+#sankey {
+  margin: 0;
+  min-width: 0;
+}
+
+#mainChart {
+  display: block;
+  width: 100%;
   max-width: var(--max-width);
+  height: auto;
+}
+
+#sankeyChart {
+  display: none;
+  width: 100%;
+  max-width: var(--sankey-column-width);
+  height: auto;
+}
+
+#sankeyChart.is-visible {
+  display: block;
 }
 
 #uf-option {
   display: block;
   margin: 1rem 0;
   font-size: 1rem;
-}
-
-#mapas,
-#sankey {
-  margin: 1.5rem 0;
-}
-
-#mainChart,
-#sankeyChart {
-  width: 100%;
-  max-width: var(--max-width);
-  height: auto;
-}
-
-#mainChart {
-  display: block;
-}
-
-#sankeyChart {
-  display: none;
-}
-
-#sankeyChart.is-visible {
-  display: block;
 }
 
 #timescroll {
@@ -152,6 +168,7 @@ body {
   padding: 1rem;
   border-radius: 4px;
   line-height: 1.5;
+  min-height: 4.5rem;
 }
 
 .sankey-message--hint {

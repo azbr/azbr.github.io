@@ -56,21 +56,23 @@
                 <option value="TO" disabled>Tocantins</option>
             </select>
 
-            <section id="mapas" aria-labelledby="mapa-titulo">
-                <h2 id="mapa-titulo" class="visually-hidden">Mapa de prefeituras</h2>
-                <svg id="mainChart" role="img" aria-label="Mapa coroplético dos municípios do Rio de Janeiro"></svg>
-                <div id="timescroll" role="group" aria-label="Navegação por ano eleitoral">
-                    <button type="button" id="previous" aria-label="Ano anterior">Anterior</button>
-                    <div id="ano-atual" aria-live="polite" aria-atomic="true"></div>
-                    <button type="button" id="next" aria-label="Próximo ano">Próximo</button>
-                </div>
-            </section>
+            <div class="viz-row">
+                <section id="mapas" aria-labelledby="mapa-titulo">
+                    <h2 id="mapa-titulo" class="visually-hidden">Mapa de prefeituras</h2>
+                    <svg id="mainChart" role="img" aria-label="Mapa coroplético dos municípios do Rio de Janeiro"></svg>
+                    <div id="timescroll" role="group" aria-label="Navegação por ano eleitoral">
+                        <button type="button" id="previous" aria-label="Ano anterior">Anterior</button>
+                        <div id="ano-atual" aria-live="polite" aria-atomic="true"></div>
+                        <button type="button" id="next" aria-label="Próximo ano">Próximo</button>
+                    </div>
+                </section>
 
-            <section id="sankey" aria-labelledby="sankey-titulo">
-                <h2 id="sankey-titulo" class="visually-hidden">Composição da câmara municipal</h2>
-                <p id="sankey-message" class="sankey-message sankey-message--hint"></p>
-                <svg id="sankeyChart" role="img" aria-label="Diagrama Sankey da câmara municipal" aria-hidden="true"></svg>
-            </section>
+                <section id="sankey" aria-labelledby="sankey-titulo">
+                    <h2 id="sankey-titulo" class="visually-hidden">Composição da câmara municipal</h2>
+                    <p id="sankey-message" class="sankey-message sankey-message--hint"></p>
+                    <svg id="sankeyChart" role="img" aria-label="Diagrama Sankey da câmara municipal" aria-hidden="true"></svg>
+                </section>
+            </div>
 
             <aside id="lista-features" aria-label="Legenda e instruções"></aside>
         </main>
