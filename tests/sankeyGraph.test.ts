@@ -35,3 +35,25 @@ describe("graphFromVereadores", () => {
     expect(graph!.links.length).toBeGreaterThan(0);
   });
 });
+
+describe("graphFromCsv Rio", () => {
+  it("produz links com value > 0 e índices válidos", () => {
+    const rows = readFileSync(
+      join(process.cwd(), "data/camara-rj.csv"),
+      "utf-8",
+    )
+      .trim()
+      .split("\n")
+      .slice(1)
+      .map((line) => {
+        const [source, target, value] = line.split(",");
+        return { source, target, value };
+      });
+    const graph = graphFromCsv(rows, listarAnos());
+    expect(graph.links.some((l) => l.value > 0)).toBe(true);
+    for (const link of graph.links) {
+      expect(link.source).toBeGreaterThanOrEqual(0);
+      expect(link.target).toBeLessThan(graph.nodes.length);
+    }
+  });
+});
