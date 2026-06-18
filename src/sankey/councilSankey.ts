@@ -9,16 +9,16 @@ import {
 import { SANKEY_HEIGHT, SANKEY_WIDTH } from "../config";
 import type { SankeyGraph as AppSankeyGraph } from "../types/election";
 import { orientacaoFromSankeyNodeName, orientacaoToColor } from "../utils/colors";
+import {
+  clampSankeyNodeY,
+  SANKEY_NODE_WIDTH,
+  sankeyLayoutExtent,
+} from "./sankeyLayout";
 
 type LayoutNode = SankeyNode<{}, {}> & { name: string };
 type LayoutLink = SankeyLink<LayoutNode, {}>;
 
 const UNITS = "Cadeiras";
-const MARGIN = { top: 20, right: 10, bottom: 50, left: 10 };
-const INNER_HEIGHT = SANKEY_HEIGHT - 100;
-/** Mesmo deslocamento do site legado (camara.js) */
-const CHART_OFFSET_X = 100;
-const CHART_OFFSET_Y = 55;
 
 export class CouncilSankey {
   private readonly svg: Selection<SVGSVGElement, unknown, null, undefined>;
@@ -65,6 +65,8 @@ export class CouncilSankey {
     this.messageEl.hidden = true;
     this.svg.classed("is-visible", true).attr("aria-hidden", "false").style("display", null);
 
+    const { extent, yMin, yMax } = sankeyLayoutExtent();
+
     const layoutGraph = {
       nodes: graph.nodes.map((n) => ({ name: n.name })),
       links: graph.links.map((l) => ({
@@ -75,13 +77,10 @@ export class CouncilSankey {
     };
 
     const layout = sankey<LayoutNode, LayoutLink>()
-      .nodeWidth(50)
+      .nodeWidth(SANKEY_NODE_WIDTH)
       .nodePadding(30)
       .nodeAlign(sankeyJustify)
-      .extent([
-        [MARGIN.left, MARGIN.top],
-        [SANKEY_WIDTH - MARGIN.right, INNER_HEIGHT],
-      ]);
+      .extent(extent);
 
     const { nodes, links } = layout(layoutGraph);
     const linkPath = sankeyLinkHorizontal();
@@ -89,11 +88,7 @@ export class CouncilSankey {
     const activeNodes = nodes.filter((n) => (n.value ?? 0) > 0);
     const graphForUpdate = { nodes: activeNodes, links: activeLinks };
 
-    const innerG = this.chartG
-      .append("g")
-      .attr("class", "sankey-inner")
-      .attr("transform", `translate(${CHART_OFFSET_X},${CHART_OFFSET_Y})`);
-
+    const innerG = this.chartG.append("g").attr("class", "sankey-inner");
     const dragContainer = innerG.node()!;
 
     const linkSelection = innerG
@@ -156,10 +151,7 @@ export class CouncilSankey {
       })
       .on("drag", function (event, d) {
         const nodeHeight = (d.y1 ?? 0) - (d.y0 ?? 0);
-        const y = Math.max(
-          MARGIN.top,
-          Math.min(INNER_HEIGHT - nodeHeight, event.y),
-        );
+        const y = clampSankeyNodeY(event.y, nodeHeight, yMin, yMax);
         d.y0 = y;
         d.y1 = y + nodeHeight;
         select(this.parentNode as SVGGElement).attr(
@@ -175,7 +167,7 @@ export class CouncilSankey {
     this.chartG
       .append("text")
       .attr("class", "chartTitle2")
-      .attr("transform", `translate(${SANKEY_WIDTH / 2},25)`)
+      .attr("transform", `translate(${SANKEY_WIDTH / 2},22)`)
       .attr("text-anchor", "middle")
       .text(title);
   }
