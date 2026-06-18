@@ -1,3 +1,7 @@
+import {
+  buildOrientationFlowLinks,
+  computeNodeValues,
+} from "../sankey/sankeyLinkPath";
 import { listarAnos, parseSankeyNodeName } from "../utils/years";
 import type {
   CsvSankeyRow,
@@ -27,12 +31,12 @@ export function graphFromCsv(
       : rows;
 
   const nodeNames = new Set<string>();
-  const links: SankeyLink[] = [];
+  const csvLinks: SankeyLink[] = [];
 
   for (const row of filteredRows) {
     nodeNames.add(row.source);
     nodeNames.add(row.target);
-    links.push({
+    csvLinks.push({
       source: row.source,
       target: row.target,
       value: Number.parseInt(row.value, 10) || 0,
@@ -40,6 +44,8 @@ export function graphFromCsv(
   }
 
   const nodes: SankeyNode[] = [...nodeNames].sort().map((name) => ({ name }));
+  const nodeValues = computeNodeValues(nodes, csvLinks);
+  const links = buildOrientationFlowLinks(nodes, nodeValues);
   return indexGraph({ nodes, links });
 }
 
@@ -77,26 +83,15 @@ export function graphFromVereadores(
     }
   }
 
-  const links: SankeyLink[] = [];
-  for (let i = 0; i < anos.length - 1; i++) {
-    const fromYear = anos[i];
-    const toYear = anos[i + 1];
-    const fromBuckets = bucketsByYear.get(fromYear);
-    const toBuckets = bucketsByYear.get(toYear);
-    if (!fromBuckets || !toBuckets) continue;
-
-    for (const [orientacao, value] of fromBuckets) {
-      if (value <= 0) continue;
-      const source = `${fromYear}-${String(orientacao).padStart(2, "0")}`;
-      const target = `${toYear}-${String(orientacao).padStart(2, "0")}`;
-      const targetValue = toBuckets.get(orientacao) ?? 0;
-      nodeNames.add(source);
-      nodeNames.add(target);
-      links.push({ source, target, value: Math.min(value, targetValue) || value });
-    }
-  }
-
   const nodes: SankeyNode[] = [...nodeNames].sort().map((name) => ({ name }));
+  const nodeValues = new Map<string, number>();
+  for (const node of nodes) {
+    const parsed = parseSankeyNodeName(node.name);
+    if (!parsed) continue;
+    const buckets = bucketsByYear.get(String(parsed.year));
+    nodeValues.set(node.name, buckets?.get(parsed.orientacao) ?? 0);
+  }
+  const links = buildOrientationFlowLinks(nodes, nodeValues);
   return indexGraph({ nodes, links });
 }
 
