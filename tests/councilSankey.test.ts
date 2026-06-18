@@ -11,7 +11,7 @@ function miniGraph(): SankeyGraph {
 }
 
 describe("CouncilSankey", () => {
-  it("renderiza nós e links no SVG", () => {
+  it("renderiza nós e links preenchidos no SVG", () => {
     const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
     svg.id = "sankeyChart";
     const message = document.createElement("p");
@@ -23,7 +23,11 @@ describe("CouncilSankey", () => {
     expect(svg.classList.contains("is-visible")).toBe(true);
     expect(message.hidden).toBe(true);
     expect(svg.querySelectorAll(".node rect").length).toBeGreaterThan(0);
-    expect(svg.querySelectorAll(".sankey-links path").length).toBeGreaterThan(0);
+    const paths = svg.querySelectorAll(".sankey-links path");
+    expect(paths.length).toBeGreaterThan(0);
+    const firstPath = paths[0] as SVGPathElement;
+    expect(firstPath.getAttribute("d")).toMatch(/Z$/);
+    expect(firstPath.style.fillOpacity).toBe("0.45");
   });
 
   it("mostra estado vazio quando grafo não tem links", () => {

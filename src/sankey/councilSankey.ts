@@ -2,7 +2,6 @@ import { drag, format, select, type Selection } from "d3";
 import {
   sankey,
   sankeyJustify,
-  sankeyLinkHorizontal,
   type SankeyLink,
   type SankeyNode,
 } from "d3-sankey";
@@ -14,6 +13,7 @@ import {
   SANKEY_NODE_WIDTH,
   sankeyLayoutExtent,
 } from "./sankeyLayout";
+import { sankeyFlowPath } from "./sankeyLinkPath";
 
 type LayoutNode = SankeyNode<{}, {}> & { name: string };
 type LayoutLink = SankeyLink<LayoutNode, {}>;
@@ -83,10 +83,10 @@ export class CouncilSankey {
       .extent(extent);
 
     const { nodes, links } = layout(layoutGraph);
-    const linkPath = sankeyLinkHorizontal();
+    const flowPath = (d: LayoutLink) =>
+      sankeyFlowPath(d.source as LayoutNode, d.target as LayoutNode);
     const activeLinks = links.filter((l) => l.value > 0);
     const activeNodes = nodes.filter((n) => (n.value ?? 0) > 0);
-    const graphForUpdate = { nodes: activeNodes, links: activeLinks };
 
     const innerG = this.chartG.append("g").attr("class", "sankey-inner");
     const dragContainer = innerG.node()!;
@@ -94,17 +94,28 @@ export class CouncilSankey {
     const linkSelection = innerG
       .append("g")
       .attr("class", "sankey-links")
-      .attr("fill", "none")
-      .attr("stroke", "#000")
-      .attr("stroke-opacity", 0.2)
       .style("pointer-events", "none")
       .selectAll<SVGPathElement, LayoutLink>("path")
       .data(activeLinks)
       .join("path")
       .attr("class", (d) => (d.value ? "link" : "link zero"))
-      .attr("d", linkPath)
-      .attr("stroke-width", (d) => Math.max(1, d.width ?? 0))
-      .sort((a, b) => (b.width ?? 0) - (a.width ?? 0));
+      .attr("d", flowPath)
+      .attr("stroke", "none")
+      .style("fill", (d) =>
+        orientacaoToColor(
+          orientacaoFromSankeyNodeName((d.source as LayoutNode).name),
+        ),
+      )
+      .style("fill-opacity", 0.45)
+      .sort((a, b) => {
+        const aH =
+          ((a.target as LayoutNode).y1 ?? 0) -
+          ((a.target as LayoutNode).y0 ?? 0);
+        const bH =
+          ((b.target as LayoutNode).y1 ?? 0) -
+          ((b.target as LayoutNode).y0 ?? 0);
+        return bH - aH;
+      });
 
     linkSelection.append("title").text((d) => {
       const s = d.source as LayoutNode;
@@ -158,8 +169,7 @@ export class CouncilSankey {
           "transform",
           `translate(${d.x0 ?? 0},${y})`,
         );
-        layout.update(graphForUpdate);
-        linkSelection.attr("d", linkPath);
+        linkSelection.attr("d", flowPath);
       });
 
     nodeSelection.selectAll<SVGRectElement, LayoutNode>("rect").call(nodeDrag);
