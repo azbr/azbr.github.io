@@ -1,6 +1,6 @@
 import type { Topology } from "topojson-specification";
 
-export type AnoEleicao = "2004" | "2008" | "2012" | "2016";
+export type AnoEleicao = "2004" | "2008" | "2012" | "2016" | "2020" | "2024";
 
 export interface Prefeito {
   ORIENTACAO: number;
@@ -33,6 +33,32 @@ export interface MunicipioProperties {
 }
 
 export type RjMunicipiosTopology = Topology;
+
+export interface EstadoProperties {
+  uf: string;
+  nome: string;
+  codigo_ibg: string;
+}
+
+export type BrEstadosTopology = Topology;
+
+export interface MunicipioMeta {
+  nome: string;
+  id_legacy?: number;
+}
+
+export interface StateElectionBundle {
+  uf: string;
+  anos: number[];
+  municipios: Record<string, MunicipioMeta>;
+  prefeitos: PrefeitosPorAno;
+  vereadores: VereadoresPorAno;
+}
+
+export interface UfSelection {
+  uf: string;
+  nome: string;
+}
 
 export interface SankeyNode {
   name: string;

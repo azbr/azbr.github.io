@@ -1,4 +1,4 @@
-import { RIO_CAPITAL_ID, RIO_CAPITAL_NOME } from "../config";
+import { RIO_CAPITAL_IBGE, RIO_CAPITAL_ID, RIO_CAPITAL_NOME } from "../config";
 import type { MunicipioProperties } from "../types/election";
 
 export function normalizeCityName(nome: string): string {
@@ -10,7 +10,7 @@ export function normalizeCityName(nome: string): string {
 }
 
 export function isRioCapital(id: string, nome?: string): boolean {
-  if (id === RIO_CAPITAL_ID) return true;
+  if (id === RIO_CAPITAL_ID || id === RIO_CAPITAL_IBGE) return true;
   if (nome && normalizeCityName(nome) === RIO_CAPITAL_NOME) return true;
   return false;
 }

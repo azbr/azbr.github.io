@@ -62,9 +62,10 @@ export class ChoroplethMap {
       .on("mouseover", (event, d) => this.showTooltip(event, d))
       .on("mouseout", () => this.hideTooltip())
       .on("click", (_event, d) => {
-        this.selectCity(String(d.properties.id));
+        const cityId = String(d.properties.codigo_ibg || d.properties.id);
+        this.selectCity(cityId);
         this.onCitySelect?.({
-          id: String(d.properties.id),
+          id: cityId,
           nome: d.properties.nome,
         });
       });
@@ -96,7 +97,10 @@ export class ChoroplethMap {
 
   selectCity(id: string | null): void {
     this.selectedCityId = id;
-    this.pathLayer.classed("selected", (d) => String(d.properties.id) === id);
+    this.pathLayer.classed("selected", (d) => {
+      const key = String(d.properties.codigo_ibg || d.properties.id);
+      return key === id;
+    });
   }
 
   /** Seleciona município e dispara o callback (ex.: ao iniciar com o Rio). */
@@ -125,8 +129,15 @@ export class ChoroplethMap {
     this.titleEl.text(`Prefeituras ${this.currentYear}`);
   }
 
-  private fillForCity(id: string): string | undefined {
-    const row = this.prefeitos[String(this.currentYear)]?.[id];
+  private cityDataKey(props: MunicipioProperties): string {
+    const ibge = props.codigo_ibg;
+    const yearKey = String(this.currentYear);
+    if (ibge && this.prefeitos[yearKey]?.[ibge]) return ibge;
+    return String(props.id);
+  }
+
+  private fillForCity(props: MunicipioProperties): string | undefined {
+    const row = this.prefeitos[String(this.currentYear)]?.[this.cityDataKey(props)];
     if (!row) return undefined;
     return orientacaoToColor(row.ORIENTACAO);
   }
@@ -135,12 +146,11 @@ export class ChoroplethMap {
     this.pathLayer
       .transition()
       .duration(300)
-      .style("fill", (d) => this.fillForCity(String(d.properties.id)) ?? "#ddd");
+      .style("fill", (d) => this.fillForCity(d.properties) ?? "#ddd");
   }
 
   private showTooltip(event: MouseEvent, d: MunicipioFeature): void {
-    const id = String(d.properties.id);
-    const row = this.prefeitos[String(this.currentYear)]?.[id];
+    const row = this.prefeitos[String(this.currentYear)]?.[this.cityDataKey(d.properties)];
     if (!row) return;
 
     const msg = [

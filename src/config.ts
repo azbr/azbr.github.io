@@ -12,10 +12,16 @@ export const DATA_PATHS = {
   municipios: "data/rj-cidades.json",
   vereadores: "data/vereadores1.json",
   camaraRioCsv: "data/camara-rj.csv",
+  brEstadosTopo: "data/topo/br-estados.topo.json",
+  stateTopo: (uf: string) => `data/topo/${uf.toLowerCase()}-municipios.topo.json`,
+  stateElection: (uf: string) => `data/states/${uf.toLowerCase()}.json`,
 } as const;
 
 /** ID interno do município Rio de Janeiro na base legada */
 export const RIO_CAPITAL_ID = "3658";
+
+/** Código IBGE do município Rio de Janeiro */
+export const RIO_CAPITAL_IBGE = "3304557";
 
 export const RIO_CAPITAL_NOME = "rio de janeiro";
 

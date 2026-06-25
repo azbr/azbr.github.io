@@ -1,18 +1,24 @@
 import { select } from "d3";
-import { loadCamaraRioCsv, loadElectionData } from "./data/loaders";
-import { graphFromCsv } from "./data/sankeyGraph";
+import {
+  loadBrEstadosTopo,
+  loadCamaraRioCsv,
+  loadStateView,
+} from "./data/loaders";
+import { graphFromCsv, graphFromVereadores } from "./data/sankeyGraph";
 import { bindYearControls, ChoroplethMap } from "./map/choropleth";
+import { BrazilStatesMap } from "./map/brazilStates";
 import { CouncilSankey } from "./sankey/councilSankey";
 import { renderOrientationLegend } from "./ui/legend";
 import { isRioCapital } from "./utils/geo";
 import { listarAnos } from "./utils/years";
+import type { ElectionData } from "./types/election";
 
 async function init(): Promise<void> {
   const legendContainer = document.getElementById("lista-features");
   if (legendContainer) renderOrientationLegend(legendContainer);
 
-  const [data, csvRows] = await Promise.all([
-    loadElectionData(),
+  const [brTopo, csvRows] = await Promise.all([
+    loadBrEstadosTopo(),
     loadCamaraRioCsv(),
   ]);
 
@@ -27,31 +33,48 @@ async function init(): Promise<void> {
     throw new Error("Elementos da página não encontrados.");
   }
 
-  const map = new ChoroplethMap(select(mapEl), data.prefeitos, data.municipios);
+  const svg = select(mapEl);
   const sankey = new CouncilSankey(sankeyEl, sankeyMessage);
-
-  bindYearControls(map);
-
+  let map: ChoroplethMap | null = null;
+  let stateData: ElectionData | null = null;
   let selectedRio = false;
 
   const refreshSankey = (): void => {
-    if (!selectedRio) return;
+    if (!selectedRio || !map) return;
     sankey.render(rioGraph, "Câmara Municipal do Rio de Janeiro");
   };
 
-  map.setOnCitySelect((city) => {
-    map.selectCity(city.id);
-    if (isRioCapital(city.id, city.nome)) {
-      selectedRio = true;
-      refreshSankey();
-    } else {
-      selectedRio = false;
-      sankey.showUnavailable(city.nome);
-    }
-  });
+  const mountStateMap = async (uf: string): Promise<void> => {
+    stateData = await loadStateView(uf);
+    map = new ChoroplethMap(svg, stateData.prefeitos, stateData.municipios);
+    bindYearControls(map);
 
-  map.setOnYearChange(() => {
-    if (selectedRio) refreshSankey();
+    map.setOnCitySelect((city) => {
+      map?.selectCity(city.id);
+      if (isRioCapital(city.id, city.nome)) {
+        selectedRio = true;
+        refreshSankey();
+        return;
+      }
+      selectedRio = false;
+      const graph = stateData
+        ? graphFromVereadores(stateData.vereadores, city.id, allowedYears)
+        : null;
+      if (graph) {
+        sankey.render(graph, `Câmara Municipal — ${city.nome}`);
+      } else {
+        sankey.showUnavailable(city.nome);
+      }
+    });
+
+    map.setOnYearChange(() => {
+      if (selectedRio) refreshSankey();
+    });
+  };
+
+  const brMap = new BrazilStatesMap(svg, brTopo);
+  brMap.setOnUfSelect((ufSel) => {
+    void mountStateMap(ufSel.uf);
   });
 }
 
