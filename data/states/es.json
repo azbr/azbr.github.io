@@ -1,0 +1,8368 @@
+{
+  "uf": "ES",
+  "anos": [
+    2004,
+    2008,
+    2012
+  ],
+  "municipios": {
+    "3200102": {
+      "nome": "Afonso Cláudio"
+    },
+    "3200136": {
+      "nome": "Águia Branca"
+    },
+    "3200169": {
+      "nome": "Água Doce do Norte"
+    },
+    "3200201": {
+      "nome": "Alegre"
+    },
+    "3200300": {
+      "nome": "Alfredo Chaves"
+    },
+    "3200359": {
+      "nome": "Alto Rio Novo"
+    },
+    "3200409": {
+      "nome": "Anchieta"
+    },
+    "3200508": {
+      "nome": "Apiacá"
+    },
+    "3200607": {
+      "nome": "Aracruz"
+    },
+    "3200706": {
+      "nome": "Atílio Vivácqua"
+    },
+    "3200805": {
+      "nome": "Baixo Guandu"
+    },
+    "3200904": {
+      "nome": "Barra de São Francisco"
+    },
+    "3201001": {
+      "nome": "Boa Esperança"
+    },
+    "3201100": {
+      "nome": "Bom Jesus do Norte"
+    },
+    "3201159": {
+      "nome": "Brejetuba"
+    },
+    "3201209": {
+      "nome": "Cachoeiro de Itapemirim"
+    },
+    "3201308": {
+      "nome": "Cariacica"
+    },
+    "3201407": {
+      "nome": "Castelo"
+    },
+    "3201506": {
+      "nome": "Colatina"
+    },
+    "3201605": {
+      "nome": "Conceição da Barra"
+    },
+    "3201704": {
+      "nome": "Conceição do Castelo"
+    },
+    "3201803": {
+      "nome": "Divino de São Lourenço"
+    },
+    "3201902": {
+      "nome": "Domingos Martins"
+    },
+    "3202009": {
+      "nome": "Dores do Rio Preto"
+    },
+    "3202108": {
+      "nome": "Ecoporanga"
+    },
+    "3202207": {
+      "nome": "Fundão"
+    },
+    "3202256": {
+      "nome": "Governador Lindenberg"
+    },
+    "3202306": {
+      "nome": "Guaçuí"
+    },
+    "3202405": {
+      "nome": "Guarapari"
+    },
+    "3202454": {
+      "nome": "Ibatiba"
+    },
+    "3202504": {
+      "nome": "Ibiraçu"
+    },
+    "3202553": {
+      "nome": "Ibitirama"
+    },
+    "3202603": {
+      "nome": "Iconha"
+    },
+    "3202652": {
+      "nome": "Irupi"
+    },
+    "3202702": {
+      "nome": "Itaguaçu"
+    },
+    "3202801": {
+      "nome": "Itapemirim"
+    },
+    "3202900": {
+      "nome": "Itarana"
+    },
+    "3203007": {
+      "nome": "Iúna"
+    },
+    "3203056": {
+      "nome": "Jaguaré"
+    },
+    "3203106": {
+      "nome": "Jerônimo Monteiro"
+    },
+    "3203130": {
+      "nome": "João Neiva"
+    },
+    "3203163": {
+      "nome": "Laranja da Terra"
+    },
+    "3203205": {
+      "nome": "Linhares"
+    },
+    "3203304": {
+      "nome": "Mantenópolis"
+    },
+    "3203320": {
+      "nome": "Marataízes"
+    },
+    "3203346": {
+      "nome": "Marechal Floriano"
+    },
+    "3203353": {
+      "nome": "Marilândia"
+    },
+    "3203403": {
+      "nome": "Mimoso do Sul"
+    },
+    "3203502": {
+      "nome": "Montanha"
+    },
+    "3203601": {
+      "nome": "Mucurici"
+    },
+    "3203700": {
+      "nome": "Muniz Freire"
+    },
+    "3203809": {
+      "nome": "Muqui"
+    },
+    "3203908": {
+      "nome": "Nova Venécia"
+    },
+    "3204005": {
+      "nome": "Pancas"
+    },
+    "3204054": {
+      "nome": "Pedro Canário"
+    },
+    "3204104": {
+      "nome": "Pinheiros"
+    },
+    "3204203": {
+      "nome": "Piúma"
+    },
+    "3204252": {
+      "nome": "Ponto Belo"
+    },
+    "3204302": {
+      "nome": "Presidente Kennedy"
+    },
+    "3204351": {
+      "nome": "Rio Bananal"
+    },
+    "3204401": {
+      "nome": "Rio Novo do Sul"
+    },
+    "3204500": {
+      "nome": "Santa Leopoldina"
+    },
+    "3204559": {
+      "nome": "Santa Maria de Jetibá"
+    },
+    "3204609": {
+      "nome": "Santa Teresa"
+    },
+    "3204658": {
+      "nome": "São Domingos do Norte"
+    },
+    "3204708": {
+      "nome": "São Gabriel da Palha"
+    },
+    "3204807": {
+      "nome": "São José do Calçado"
+    },
+    "3204906": {
+      "nome": "São Mateus"
+    },
+    "3204955": {
+      "nome": "São Roque do Canaã"
+    },
+    "3205002": {
+      "nome": "Serra"
+    },
+    "3205010": {
+      "nome": "Sooretama"
+    },
+    "3205036": {
+      "nome": "Vargem Alta"
+    },
+    "3205069": {
+      "nome": "Venda Nova do Imigrante"
+    },
+    "3205101": {
+      "nome": "Viana"
+    },
+    "3205150": {
+      "nome": "Vila Pavão"
+    },
+    "3205176": {
+      "nome": "Vila Valério"
+    },
+    "3205200": {
+      "nome": "Vila Velha"
+    },
+    "3205309": {
+      "nome": "Vitória"
+    }
+  },
+  "prefeitos": {
+    "2004": {
+      "3200102": {
+        "ORIENTACAO": 5,
+        "NOME": "afonso claudio",
+        "SIGLA": "PP"
+      },
+      "3200169": {
+        "ORIENTACAO": 3,
+        "NOME": "agua doce do norte",
+        "SIGLA": "PT do B"
+      },
+      "3200136": {
+        "ORIENTACAO": 4,
+        "NOME": "aguia branca",
+        "SIGLA": "PMDB"
+      },
+      "3200201": {
+        "ORIENTACAO": 3,
+        "NOME": "alegre",
+        "SIGLA": "PPS"
+      },
+      "3200300": {
+        "ORIENTACAO": 3,
+        "NOME": "alfredo chaves",
+        "SIGLA": "PSB"
+      },
+      "3200359": {
+        "ORIENTACAO": 4,
+        "NOME": "alto rio novo",
+        "SIGLA": "PSDB"
+      },
+      "3200409": {
+        "ORIENTACAO": 4,
+        "NOME": "anchieta",
+        "SIGLA": "PSDB"
+      },
+      "3200508": {
+        "ORIENTACAO": 3,
+        "NOME": "apiaca",
+        "SIGLA": "PPS"
+      },
+      "3200607": {
+        "ORIENTACAO": 3,
+        "NOME": "aracruz",
+        "SIGLA": "PDT"
+      },
+      "3200706": {
+        "ORIENTACAO": 4,
+        "NOME": "atilio vivacqua",
+        "SIGLA": "PMDB"
+      },
+      "3200805": {
+        "ORIENTACAO": 3,
+        "NOME": "baixo guandu",
+        "SIGLA": "PPS"
+      },
+      "3200904": {
+        "ORIENTACAO": 5,
+        "NOME": "barra de sao francisco",
+        "SIGLA": "PL"
+      },
+      "3201001": {
+        "ORIENTACAO": 3,
+        "NOME": "boa esperanca",
+        "SIGLA": "PPS"
+      },
+      "3201100": {
+        "ORIENTACAO": 3,
+        "NOME": "bom jesus do norte",
+        "SIGLA": "PPS"
+      },
+      "3201159": {
+        "ORIENTACAO": 4,
+        "NOME": "brejetuba",
+        "SIGLA": "PMDB"
+      },
+      "3201209": {
+        "ORIENTACAO": 4,
+        "NOME": "cachoeiro de itapemirim",
+        "SIGLA": "PMDB"
+      },
+      "3201308": {
+        "ORIENTACAO": 3,
+        "NOME": "cariacica",
+        "SIGLA": "PT"
+      },
+      "3201407": {
+        "ORIENTACAO": 3,
+        "NOME": "castelo",
+        "SIGLA": "PT"
+      },
+      "3201506": {
+        "ORIENTACAO": 3,
+        "NOME": "colatina",
+        "SIGLA": "PSB"
+      },
+      "3201605": {
+        "ORIENTACAO": 3,
+        "NOME": "conceicao da barra",
+        "SIGLA": "PMN"
+      },
+      "3201704": {
+        "ORIENTACAO": 3,
+        "NOME": "conceicao do castelo",
+        "SIGLA": "PSB"
+      },
+      "3201803": {
+        "ORIENTACAO": 3,
+        "NOME": "divino de sao lourenco",
+        "SIGLA": "PMN"
+      },
+      "3201902": {
+        "ORIENTACAO": 4,
+        "NOME": "domingos martins",
+        "SIGLA": "PTB"
+      },
+      "3202009": {
+        "ORIENTACAO": 3,
+        "NOME": "dores do rio preto",
+        "SIGLA": "PPS"
+      },
+      "3202108": {
+        "ORIENTACAO": 3,
+        "NOME": "ecoporanga",
+        "SIGLA": "PT"
+      },
+      "3202207": {
+        "ORIENTACAO": 5,
+        "NOME": "fundao",
+        "SIGLA": "PP"
+      },
+      "3202256": {
+        "ORIENTACAO": 4,
+        "NOME": "governador lindenberg",
+        "SIGLA": "PMDB"
+      },
+      "3202306": {
+        "ORIENTACAO": 3,
+        "NOME": "guacui",
+        "SIGLA": "PPS"
+      },
+      "3202405": {
+        "ORIENTACAO": 5,
+        "NOME": "guarapari",
+        "SIGLA": "PHS"
+      },
+      "3202454": {
+        "ORIENTACAO": 5,
+        "NOME": "ibatiba",
+        "SIGLA": "PP"
+      },
+      "3202504": {
+        "ORIENTACAO": 3,
+        "NOME": "ibiracu",
+        "SIGLA": "PSB"
+      },
+      "3202553": {
+        "ORIENTACAO": 3,
+        "NOME": "ibitirama",
+        "SIGLA": "PDT"
+      },
+      "3202603": {
+        "ORIENTACAO": 3,
+        "NOME": "iconha",
+        "SIGLA": "PT"
+      },
+      "3202652": {
+        "ORIENTACAO": 6,
+        "NOME": "irupi",
+        "SIGLA": "PFL"
+      },
+      "3202702": {
+        "ORIENTACAO": 4,
+        "NOME": "itaguacu",
+        "SIGLA": "PSDB"
+      },
+      "3202801": {
+        "ORIENTACAO": 4,
+        "NOME": "itapemirim",
+        "SIGLA": "PTB"
+      },
+      "3202900": {
+        "ORIENTACAO": 4,
+        "NOME": "itarana",
+        "SIGLA": "PMDB"
+      },
+      "3203007": {
+        "ORIENTACAO": 3,
+        "NOME": "iuna",
+        "SIGLA": "PPS"
+      },
+      "3203056": {
+        "ORIENTACAO": 4,
+        "NOME": "jaguare",
+        "SIGLA": "PSDB"
+      },
+      "3203106": {
+        "ORIENTACAO": 3,
+        "NOME": "jeronimo monteiro",
+        "SIGLA": "PPS"
+      },
+      "3203130": {
+        "ORIENTACAO": 4,
+        "NOME": "joao neiva",
+        "SIGLA": "PMDB"
+      },
+      "3203163": {
+        "ORIENTACAO": 6,
+        "NOME": "laranja da terra",
+        "SIGLA": "PFL"
+      },
+      "3203205": {
+        "ORIENTACAO": 4,
+        "NOME": "linhares",
+        "SIGLA": "PTB"
+      },
+      "3203304": {
+        "ORIENTACAO": 4,
+        "NOME": "mantenopolis",
+        "SIGLA": "PTB"
+      },
+      "3203320": {
+        "ORIENTACAO": 4,
+        "NOME": "marataizes",
+        "SIGLA": "PMDB"
+      },
+      "3203346": {
+        "ORIENTACAO": 3,
+        "NOME": "marechal floriano",
+        "SIGLA": "PPS"
+      },
+      "3203353": {
+        "ORIENTACAO": 3,
+        "NOME": "marilandia",
+        "SIGLA": "PSB"
+      },
+      "3203403": {
+        "ORIENTACAO": 5,
+        "NOME": "mimoso do sul",
+        "SIGLA": "PP"
+      },
+      "3203502": {
+        "ORIENTACAO": 6,
+        "NOME": "montanha",
+        "SIGLA": "PFL"
+      },
+      "3203601": {
+        "ORIENTACAO": 4,
+        "NOME": "mucurici",
+        "SIGLA": "PMDB"
+      },
+      "3203700": {
+        "ORIENTACAO": 3,
+        "NOME": "muniz freire",
+        "SIGLA": "PSB"
+      },
+      "3203809": {
+        "ORIENTACAO": 3,
+        "NOME": "muqui",
+        "SIGLA": "PSB"
+      },
+      "3203908": {
+        "ORIENTACAO": 6,
+        "NOME": "nova venecia",
+        "SIGLA": "PFL"
+      },
+      "3204005": {
+        "ORIENTACAO": 3,
+        "NOME": "pancas",
+        "SIGLA": "PMN"
+      },
+      "3204054": {
+        "ORIENTACAO": 4,
+        "NOME": "pedro canario",
+        "SIGLA": "PTB"
+      },
+      "3204104": {
+        "ORIENTACAO": 3,
+        "NOME": "pinheiros",
+        "SIGLA": "PSB"
+      },
+      "3204203": {
+        "ORIENTACAO": 3,
+        "NOME": "piuma",
+        "SIGLA": "PSB"
+      },
+      "3204252": {
+        "ORIENTACAO": 3,
+        "NOME": "ponto belo",
+        "SIGLA": "PSB"
+      },
+      "3204302": {
+        "ORIENTACAO": 5,
+        "NOME": "presidente kennedy",
+        "SIGLA": "PL"
+      },
+      "3204351": {
+        "ORIENTACAO": 3,
+        "NOME": "rio bananal",
+        "SIGLA": "PSB"
+      },
+      "3204401": {
+        "ORIENTACAO": 4,
+        "NOME": "rio novo do sul",
+        "SIGLA": "PMDB"
+      },
+      "3204500": {
+        "ORIENTACAO": 3,
+        "NOME": "santa leopoldina",
+        "SIGLA": "PPS"
+      },
+      "3204609": {
+        "ORIENTACAO": 6,
+        "NOME": "santa teresa",
+        "SIGLA": "PRTB"
+      },
+      "3204708": {
+        "ORIENTACAO": 3,
+        "NOME": "sao gabriel da palha",
+        "SIGLA": "PMN"
+      },
+      "3204807": {
+        "ORIENTACAO": 4,
+        "NOME": "sao jose do calcado",
+        "SIGLA": "PSDB"
+      },
+      "3204906": {
+        "ORIENTACAO": 3,
+        "NOME": "sao mateus",
+        "SIGLA": "PPS"
+      },
+      "3204955": {
+        "ORIENTACAO": 4,
+        "NOME": "sao roque do canaa",
+        "SIGLA": "PTB"
+      },
+      "3205002": {
+        "ORIENTACAO": 3,
+        "NOME": "serra",
+        "SIGLA": "PDT"
+      },
+      "3205010": {
+        "ORIENTACAO": 4,
+        "NOME": "sooretama",
+        "SIGLA": "PMDB"
+      },
+      "3205036": {
+        "ORIENTACAO": 3,
+        "NOME": "vargem alta",
+        "SIGLA": "PPS"
+      },
+      "3205069": {
+        "ORIENTACAO": 3,
+        "NOME": "venda nova do imigrante",
+        "SIGLA": "PPS"
+      },
+      "3205101": {
+        "ORIENTACAO": 4,
+        "NOME": "viana",
+        "SIGLA": "PSDB"
+      },
+      "3205150": {
+        "ORIENTACAO": 3,
+        "NOME": "vila pavao",
+        "SIGLA": "PSB"
+      },
+      "3205176": {
+        "ORIENTACAO": 3,
+        "NOME": "vila valerio",
+        "SIGLA": "PSB"
+      },
+      "3205200": {
+        "ORIENTACAO": 3,
+        "NOME": "vila velha",
+        "SIGLA": "PDT"
+      },
+      "3205309": {
+        "ORIENTACAO": 3,
+        "NOME": "vitoria",
+        "SIGLA": "PT"
+      }
+    },
+    "2008": {
+      "3200102": {
+        "ORIENTACAO": 3,
+        "NOME": "afonso claudio",
+        "SIGLA": "PSB"
+      },
+      "3200201": {
+        "ORIENTACAO": 4,
+        "NOME": "alegre",
+        "SIGLA": "PMDB"
+      },
+      "3200300": {
+        "ORIENTACAO": 3,
+        "NOME": "alfredo chaves",
+        "SIGLA": "PSB"
+      },
+      "3200359": {
+        "ORIENTACAO": 3,
+        "NOME": "alto rio novo",
+        "SIGLA": "PPS"
+      },
+      "3200409": {
+        "ORIENTACAO": 4,
+        "NOME": "anchieta",
+        "SIGLA": "PSDB"
+      },
+      "3200508": {
+        "ORIENTACAO": 4,
+        "NOME": "apiaca",
+        "SIGLA": "PMDB"
+      },
+      "3200607": {
+        "ORIENTACAO": 4,
+        "NOME": "aracruz",
+        "SIGLA": "PMDB"
+      },
+      "3200706": {
+        "ORIENTACAO": 5,
+        "NOME": "atilio vivacqua",
+        "SIGLA": "DEM"
+      },
+      "3200805": {
+        "ORIENTACAO": 4,
+        "NOME": "baixo guandu",
+        "SIGLA": "PSDB"
+      },
+      "3200904": {
+        "ORIENTACAO": 6,
+        "NOME": "barra de sao francisco",
+        "SIGLA": "PSC"
+      },
+      "3201001": {
+        "ORIENTACAO": 4,
+        "NOME": "boa esperanca",
+        "SIGLA": "PMDB"
+      },
+      "3201100": {
+        "ORIENTACAO": 4,
+        "NOME": "bom jesus do norte",
+        "SIGLA": "PSDB"
+      },
+      "3201159": {
+        "ORIENTACAO": 5,
+        "NOME": "brejetuba",
+        "SIGLA": "DEM"
+      },
+      "3201209": {
+        "ORIENTACAO": 3,
+        "NOME": "cachoeiro de itapemirim",
+        "SIGLA": "PT"
+      },
+      "3201308": {
+        "ORIENTACAO": 3,
+        "NOME": "cariacica",
+        "SIGLA": "PT"
+      },
+      "3201407": {
+        "ORIENTACAO": 3,
+        "NOME": "castelo",
+        "SIGLA": "PT"
+      },
+      "3201506": {
+        "ORIENTACAO": 3,
+        "NOME": "colatina",
+        "SIGLA": "PT"
+      },
+      "3201605": {
+        "ORIENTACAO": 4,
+        "NOME": "conceicao da barra",
+        "SIGLA": "PSDB"
+      },
+      "3201704": {
+        "ORIENTACAO": 4,
+        "NOME": "conceicao do castelo",
+        "SIGLA": "PMDB"
+      },
+      "3201803": {
+        "ORIENTACAO": 4,
+        "NOME": "divino de sao lourenco",
+        "SIGLA": "PMDB"
+      },
+      "3201902": {
+        "ORIENTACAO": 3,
+        "NOME": "domingos martins",
+        "SIGLA": "PSB"
+      },
+      "3202009": {
+        "ORIENTACAO": 4,
+        "NOME": "dores do rio preto",
+        "SIGLA": "PSDB"
+      },
+      "3202108": {
+        "ORIENTACAO": 4,
+        "NOME": "ecoporanga",
+        "SIGLA": "PSDB"
+      },
+      "3202207": {
+        "ORIENTACAO": 3,
+        "NOME": "fundao",
+        "SIGLA": "PDT"
+      },
+      "3202256": {
+        "ORIENTACAO": 4,
+        "NOME": "governador lindenberg",
+        "SIGLA": "PMDB"
+      },
+      "3202405": {
+        "ORIENTACAO": 3,
+        "NOME": "guarapari",
+        "SIGLA": "PPS"
+      },
+      "3202306": {
+        "ORIENTACAO": 4,
+        "NOME": "guacui",
+        "SIGLA": "PMDB"
+      },
+      "3202454": {
+        "ORIENTACAO": 4,
+        "NOME": "ibatiba",
+        "SIGLA": "PMDB"
+      },
+      "3202504": {
+        "ORIENTACAO": 5,
+        "NOME": "ibiracu",
+        "SIGLA": "DEM"
+      },
+      "3202553": {
+        "ORIENTACAO": 3,
+        "NOME": "ibitirama",
+        "SIGLA": "PV"
+      },
+      "3202603": {
+        "ORIENTACAO": 5,
+        "NOME": "iconha",
+        "SIGLA": "PP"
+      },
+      "3202652": {
+        "ORIENTACAO": 5,
+        "NOME": "irupi",
+        "SIGLA": "DEM"
+      },
+      "3202702": {
+        "ORIENTACAO": 4,
+        "NOME": "itaguacu",
+        "SIGLA": "PSDB"
+      },
+      "3202801": {
+        "ORIENTACAO": 5,
+        "NOME": "itapemirim",
+        "SIGLA": "DEM"
+      },
+      "3202900": {
+        "ORIENTACAO": 4,
+        "NOME": "itarana",
+        "SIGLA": "PMDB"
+      },
+      "3203007": {
+        "ORIENTACAO": 5,
+        "NOME": "iuna",
+        "SIGLA": "DEM"
+      },
+      "3203056": {
+        "ORIENTACAO": 4,
+        "NOME": "jaguare",
+        "SIGLA": "PMDB"
+      },
+      "3203106": {
+        "ORIENTACAO": 4,
+        "NOME": "jeronimo monteiro",
+        "SIGLA": "PSDB"
+      },
+      "3203130": {
+        "ORIENTACAO": 3,
+        "NOME": "joao neiva",
+        "SIGLA": "PSB"
+      },
+      "3203163": {
+        "ORIENTACAO": 4,
+        "NOME": "laranja da terra",
+        "SIGLA": "PSDB"
+      },
+      "3203205": {
+        "ORIENTACAO": 4,
+        "NOME": "linhares",
+        "SIGLA": "PMDB"
+      },
+      "3203304": {
+        "ORIENTACAO": 3,
+        "NOME": "mantenopolis",
+        "SIGLA": "PT"
+      },
+      "3203320": {
+        "ORIENTACAO": 4,
+        "NOME": "marataizes",
+        "SIGLA": "PSDB"
+      },
+      "3203346": {
+        "ORIENTACAO": 5,
+        "NOME": "marechal floriano",
+        "SIGLA": "PP"
+      },
+      "3203353": {
+        "ORIENTACAO": 5,
+        "NOME": "marilandia",
+        "SIGLA": "PRB"
+      },
+      "3203403": {
+        "ORIENTACAO": 4,
+        "NOME": "mimoso do sul",
+        "SIGLA": "PMDB"
+      },
+      "3203502": {
+        "ORIENTACAO": 4,
+        "NOME": "montanha",
+        "SIGLA": "PSDB"
+      },
+      "3203601": {
+        "ORIENTACAO": 4,
+        "NOME": "mucurici",
+        "SIGLA": "PMDB"
+      },
+      "3203700": {
+        "ORIENTACAO": 3,
+        "NOME": "muniz freire",
+        "SIGLA": "PSB"
+      },
+      "3203809": {
+        "ORIENTACAO": 3,
+        "NOME": "muqui",
+        "SIGLA": "PSB"
+      },
+      "3203908": {
+        "ORIENTACAO": 5,
+        "NOME": "nova venecia",
+        "SIGLA": "PP"
+      },
+      "3204005": {
+        "ORIENTACAO": 3,
+        "NOME": "pancas",
+        "SIGLA": "PMN"
+      },
+      "3204054": {
+        "ORIENTACAO": 4,
+        "NOME": "pedro canario",
+        "SIGLA": "PTB"
+      },
+      "3204104": {
+        "ORIENTACAO": 3,
+        "NOME": "pinheiros",
+        "SIGLA": "PSB"
+      },
+      "3204203": {
+        "ORIENTACAO": 5,
+        "NOME": "piuma",
+        "SIGLA": "PR"
+      },
+      "3204252": {
+        "ORIENTACAO": 4,
+        "NOME": "ponto belo",
+        "SIGLA": "PMDB"
+      },
+      "3204302": {
+        "ORIENTACAO": 4,
+        "NOME": "presidente kennedy",
+        "SIGLA": "PTB"
+      },
+      "3204351": {
+        "ORIENTACAO": 3,
+        "NOME": "rio bananal",
+        "SIGLA": "PSB"
+      },
+      "3204401": {
+        "ORIENTACAO": 4,
+        "NOME": "rio novo do sul",
+        "SIGLA": "PMDB"
+      },
+      "3204500": {
+        "ORIENTACAO": 3,
+        "NOME": "santa leopoldina",
+        "SIGLA": "PDT"
+      },
+      "3204559": {
+        "ORIENTACAO": 4,
+        "NOME": "santa maria de jetiba",
+        "SIGLA": "PMDB"
+      },
+      "3204609": {
+        "ORIENTACAO": 4,
+        "NOME": "santa teresa",
+        "SIGLA": "PMDB"
+      },
+      "3205002": {
+        "ORIENTACAO": 3,
+        "NOME": "serra",
+        "SIGLA": "PDT"
+      },
+      "3205010": {
+        "ORIENTACAO": 3,
+        "NOME": "sooretama",
+        "SIGLA": "PSB"
+      },
+      "3204658": {
+        "ORIENTACAO": 3,
+        "NOME": "sao domingos do norte",
+        "SIGLA": "PSB"
+      },
+      "3204708": {
+        "ORIENTACAO": 3,
+        "NOME": "sao gabriel da palha",
+        "SIGLA": "PMN"
+      },
+      "3204807": {
+        "ORIENTACAO": 6,
+        "NOME": "sao jose do calcado",
+        "SIGLA": "PSDC"
+      },
+      "3204906": {
+        "ORIENTACAO": 3,
+        "NOME": "sao mateus",
+        "SIGLA": "PSB"
+      },
+      "3204955": {
+        "ORIENTACAO": 4,
+        "NOME": "sao roque do canaa",
+        "SIGLA": "PSDB"
+      },
+      "3205036": {
+        "ORIENTACAO": 4,
+        "NOME": "vargem alta",
+        "SIGLA": "PMDB"
+      },
+      "3205069": {
+        "ORIENTACAO": 4,
+        "NOME": "venda nova do imigrante",
+        "SIGLA": "PMDB"
+      },
+      "3205101": {
+        "ORIENTACAO": 4,
+        "NOME": "viana",
+        "SIGLA": "PMDB"
+      },
+      "3205150": {
+        "ORIENTACAO": 4,
+        "NOME": "vila pavao",
+        "SIGLA": "PMDB"
+      },
+      "3205176": {
+        "ORIENTACAO": 3,
+        "NOME": "vila valerio",
+        "SIGLA": "PSB"
+      },
+      "3205200": {
+        "ORIENTACAO": 5,
+        "NOME": "vila velha",
+        "SIGLA": "PR"
+      },
+      "3205309": {
+        "ORIENTACAO": 3,
+        "NOME": "vitoria",
+        "SIGLA": "PT"
+      },
+      "3200169": {
+        "ORIENTACAO": 4,
+        "NOME": "agua doce do norte",
+        "SIGLA": "PMDB"
+      },
+      "3200136": {
+        "ORIENTACAO": 3,
+        "NOME": "aguia branca",
+        "SIGLA": "PSB"
+      }
+    },
+    "2012": {
+      "3200102": {
+        "ORIENTACAO": 3,
+        "NOME": "afonso claudio",
+        "SIGLA": "PSB"
+      },
+      "3200201": {
+        "ORIENTACAO": 4,
+        "NOME": "alegre",
+        "SIGLA": "PMDB"
+      },
+      "3200300": {
+        "ORIENTACAO": 3,
+        "NOME": "alfredo chaves",
+        "SIGLA": "PSB"
+      },
+      "3200359": {
+        "ORIENTACAO": 3,
+        "NOME": "alto rio novo",
+        "SIGLA": "PDT"
+      },
+      "3200409": {
+        "ORIENTACAO": 4,
+        "NOME": "anchieta",
+        "SIGLA": "PTB"
+      },
+      "3200508": {
+        "ORIENTACAO": 5,
+        "NOME": "apiaca",
+        "SIGLA": "PRP"
+      },
+      "3200607": {
+        "ORIENTACAO": 3,
+        "NOME": "aracruz",
+        "SIGLA": "PDT"
+      },
+      "3200706": {
+        "ORIENTACAO": 5,
+        "NOME": "atilio vivacqua",
+        "SIGLA": "DEM"
+      },
+      "3200805": {
+        "ORIENTACAO": 2,
+        "NOME": "baixo guandu",
+        "SIGLA": "PC do B"
+      },
+      "3200904": {
+        "ORIENTACAO": 5,
+        "NOME": "barra de sao francisco",
+        "SIGLA": "DEM"
+      },
+      "3201001": {
+        "ORIENTACAO": 4,
+        "NOME": "boa esperanca",
+        "SIGLA": "PMDB"
+      },
+      "3201100": {
+        "ORIENTACAO": 3,
+        "NOME": "bom jesus do norte",
+        "SIGLA": "PDT"
+      },
+      "3201159": {
+        "ORIENTACAO": 3,
+        "NOME": "brejetuba",
+        "SIGLA": "PV"
+      },
+      "3201209": {
+        "ORIENTACAO": 3,
+        "NOME": "cachoeiro de itapemirim",
+        "SIGLA": "PT"
+      },
+      "3201308": {
+        "ORIENTACAO": 3,
+        "NOME": "cariacica",
+        "SIGLA": "PPS"
+      },
+      "3201407": {
+        "ORIENTACAO": 3,
+        "NOME": "castelo",
+        "SIGLA": "PSB"
+      },
+      "3201506": {
+        "ORIENTACAO": 3,
+        "NOME": "colatina",
+        "SIGLA": "PT"
+      },
+      "3201605": {
+        "ORIENTACAO": 4,
+        "NOME": "conceicao da barra",
+        "SIGLA": "PSDB"
+      },
+      "3201704": {
+        "ORIENTACAO": 3,
+        "NOME": "conceicao do castelo",
+        "SIGLA": "PSB"
+      },
+      "3201803": {
+        "ORIENTACAO": 4,
+        "NOME": "divino de sao lourenco",
+        "SIGLA": "PMDB"
+      },
+      "3201902": {
+        "ORIENTACAO": 5,
+        "NOME": "domingos martins",
+        "SIGLA": "PP"
+      },
+      "3202009": {
+        "ORIENTACAO": 4,
+        "NOME": "dores do rio preto",
+        "SIGLA": "PSDB"
+      },
+      "3202108": {
+        "ORIENTACAO": 3,
+        "NOME": "ecoporanga",
+        "SIGLA": "PT"
+      },
+      "3202207": {
+        "ORIENTACAO": 4,
+        "NOME": "fundao",
+        "SIGLA": "PMDB"
+      },
+      "3202256": {
+        "ORIENTACAO": 3,
+        "NOME": "governador lindenberg",
+        "SIGLA": "PDT"
+      },
+      "3202405": {
+        "ORIENTACAO": 5,
+        "NOME": "guarapari",
+        "SIGLA": "DEM"
+      },
+      "3202306": {
+        "ORIENTACAO": 3,
+        "NOME": "guacui",
+        "SIGLA": "PDT"
+      },
+      "3202454": {
+        "ORIENTACAO": 5,
+        "NOME": "ibatiba",
+        "SIGLA": "PP"
+      },
+      "3202504": {
+        "ORIENTACAO": 3,
+        "NOME": "ibiracu",
+        "SIGLA": "PMN"
+      },
+      "3202553": {
+        "ORIENTACAO": 5,
+        "NOME": "ibitirama",
+        "SIGLA": "PSD"
+      },
+      "3202603": {
+        "ORIENTACAO": 3,
+        "NOME": "iconha",
+        "SIGLA": "PSB"
+      },
+      "3202652": {
+        "ORIENTACAO": 3,
+        "NOME": "irupi",
+        "SIGLA": "PSB"
+      },
+      "3202702": {
+        "ORIENTACAO": 3,
+        "NOME": "itaguacu",
+        "SIGLA": "PSB"
+      },
+      "3202801": {
+        "ORIENTACAO": 3,
+        "NOME": "itapemirim",
+        "SIGLA": "PSB"
+      },
+      "3202900": {
+        "ORIENTACAO": 3,
+        "NOME": "itarana",
+        "SIGLA": "PT"
+      },
+      "3203007": {
+        "ORIENTACAO": 3,
+        "NOME": "iuna",
+        "SIGLA": "PDT"
+      },
+      "3203056": {
+        "ORIENTACAO": 3,
+        "NOME": "jaguare",
+        "SIGLA": "PMN"
+      },
+      "3203106": {
+        "ORIENTACAO": 4,
+        "NOME": "jeronimo monteiro",
+        "SIGLA": "PMDB"
+      },
+      "3203130": {
+        "ORIENTACAO": 3,
+        "NOME": "joao neiva",
+        "SIGLA": "PT"
+      },
+      "3203163": {
+        "ORIENTACAO": 4,
+        "NOME": "laranja da terra",
+        "SIGLA": "PSDB"
+      },
+      "3203205": {
+        "ORIENTACAO": 3,
+        "NOME": "linhares",
+        "SIGLA": "PDT"
+      },
+      "3203304": {
+        "ORIENTACAO": 3,
+        "NOME": "mantenopolis",
+        "SIGLA": "PSB"
+      },
+      "3203320": {
+        "ORIENTACAO": 4,
+        "NOME": "marataizes",
+        "SIGLA": "PSDB"
+      },
+      "3203346": {
+        "ORIENTACAO": 3,
+        "NOME": "marechal floriano",
+        "SIGLA": "PSB"
+      },
+      "3203353": {
+        "ORIENTACAO": 4,
+        "NOME": "marilandia",
+        "SIGLA": "PMDB"
+      },
+      "3203403": {
+        "ORIENTACAO": 3,
+        "NOME": "mimoso do sul",
+        "SIGLA": "PSB"
+      },
+      "3203502": {
+        "ORIENTACAO": 3,
+        "NOME": "montanha",
+        "SIGLA": "PMN"
+      },
+      "3203601": {
+        "ORIENTACAO": 4,
+        "NOME": "mucurici",
+        "SIGLA": "PMDB"
+      },
+      "3203700": {
+        "ORIENTACAO": 3,
+        "NOME": "muniz freire",
+        "SIGLA": "PSB"
+      },
+      "3203809": {
+        "ORIENTACAO": 4,
+        "NOME": "muqui",
+        "SIGLA": "PSDB"
+      },
+      "3203908": {
+        "ORIENTACAO": 3,
+        "NOME": "nova venecia",
+        "SIGLA": "PSB"
+      },
+      "3204005": {
+        "ORIENTACAO": 5,
+        "NOME": "pancas",
+        "SIGLA": "PRP"
+      },
+      "3204054": {
+        "ORIENTACAO": 3,
+        "NOME": "pedro canario",
+        "SIGLA": "PSB"
+      },
+      "3204104": {
+        "ORIENTACAO": 3,
+        "NOME": "pinheiros",
+        "SIGLA": "PSB"
+      },
+      "3204203": {
+        "ORIENTACAO": 3,
+        "NOME": "piuma",
+        "SIGLA": "PSB"
+      },
+      "3204252": {
+        "ORIENTACAO": 4,
+        "NOME": "ponto belo",
+        "SIGLA": "PTB"
+      },
+      "3204302": {
+        "ORIENTACAO": 4,
+        "NOME": "presidente kennedy",
+        "SIGLA": "PTB"
+      },
+      "3204351": {
+        "ORIENTACAO": 5,
+        "NOME": "rio bananal",
+        "SIGLA": "PP"
+      },
+      "3204401": {
+        "ORIENTACAO": 4,
+        "NOME": "rio novo do sul",
+        "SIGLA": "PMDB"
+      },
+      "3204500": {
+        "ORIENTACAO": 5,
+        "NOME": "santa leopoldina",
+        "SIGLA": "PP"
+      },
+      "3204559": {
+        "ORIENTACAO": 3,
+        "NOME": "santa maria de jetiba",
+        "SIGLA": "PDT"
+      },
+      "3204609": {
+        "ORIENTACAO": 3,
+        "NOME": "santa teresa",
+        "SIGLA": "PSB"
+      },
+      "3205002": {
+        "ORIENTACAO": 3,
+        "NOME": "serra",
+        "SIGLA": "PSB"
+      },
+      "3205010": {
+        "ORIENTACAO": 4,
+        "NOME": "sooretama",
+        "SIGLA": "PMDB"
+      },
+      "3204658": {
+        "ORIENTACAO": 3,
+        "NOME": "sao domingos do norte",
+        "SIGLA": "PSB"
+      },
+      "3204708": {
+        "ORIENTACAO": 5,
+        "NOME": "sao gabriel da palha",
+        "SIGLA": "PRP"
+      },
+      "3204807": {
+        "ORIENTACAO": 3,
+        "NOME": "sao jose do calcado",
+        "SIGLA": "PSB"
+      },
+      "3204906": {
+        "ORIENTACAO": 3,
+        "NOME": "sao mateus",
+        "SIGLA": "PSB"
+      },
+      "3204955": {
+        "ORIENTACAO": 4,
+        "NOME": "sao roque do canaa",
+        "SIGLA": "PSDB"
+      },
+      "3205036": {
+        "ORIENTACAO": 3,
+        "NOME": "vargem alta",
+        "SIGLA": "PSB"
+      },
+      "3205069": {
+        "ORIENTACAO": 4,
+        "NOME": "venda nova do imigrante",
+        "SIGLA": "PMDB"
+      },
+      "3205101": {
+        "ORIENTACAO": 3,
+        "NOME": "viana",
+        "SIGLA": "PV"
+      },
+      "3205150": {
+        "ORIENTACAO": 4,
+        "NOME": "vila pavao",
+        "SIGLA": "PMDB"
+      },
+      "3205176": {
+        "ORIENTACAO": 3,
+        "NOME": "vila valerio",
+        "SIGLA": "PT"
+      },
+      "3205200": {
+        "ORIENTACAO": 5,
+        "NOME": "vila velha",
+        "SIGLA": "DEM"
+      },
+      "3205309": {
+        "ORIENTACAO": 3,
+        "NOME": "vitoria",
+        "SIGLA": "PPS"
+      },
+      "3200169": {
+        "ORIENTACAO": 4,
+        "NOME": "agua doce do norte",
+        "SIGLA": "PMDB"
+      },
+      "3200136": {
+        "ORIENTACAO": 4,
+        "NOME": "aguia branca",
+        "SIGLA": "PMDB"
+      }
+    }
+  },
+  "vereadores": {
+    "2004": {
+      "3200102": {
+        "NOME": "afonso claudio",
+        "SIGLAS": {
+          "PFL": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PT do B": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3200169": {
+        "NOME": "agua doce do norte",
+        "SIGLAS": {
+          "PL": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PT do B": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3200136": {
+        "NOME": "aguia branca",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          }
+        }
+      },
+      "3200201": {
+        "NOME": "alegre",
+        "SIGLAS": {
+          "PL": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3200300": {
+        "NOME": "alfredo chaves",
+        "SIGLAS": {
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 3
+          }
+        }
+      },
+      "3200359": {
+        "NOME": "alto rio novo",
+        "SIGLAS": {
+          "PFL": {
+            "ORIENTACAO": 6,
+            "N": 2
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 3
+          }
+        }
+      },
+      "3200409": {
+        "NOME": "anchieta",
+        "SIGLAS": {
+          "PC do B": {
+            "ORIENTACAO": 2,
+            "N": 1
+          },
+          "PFL": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PL": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3200508": {
+        "NOME": "apiaca",
+        "SIGLAS": {
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 4
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          }
+        }
+      },
+      "3200607": {
+        "NOME": "aracruz",
+        "SIGLAS": {
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PRP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3200706": {
+        "NOME": "atilio vivacqua",
+        "SIGLAS": {
+          "PFL": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PL": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3200805": {
+        "NOME": "baixo guandu",
+        "SIGLAS": {
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PRTB": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          }
+        }
+      },
+      "3200904": {
+        "NOME": "barra de sao francisco",
+        "SIGLAS": {
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3201001": {
+        "NOME": "boa esperanca",
+        "SIGLAS": {
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3201100": {
+        "NOME": "bom jesus do norte",
+        "SIGLAS": {
+          "PFL": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3201159": {
+        "NOME": "brejetuba",
+        "SIGLAS": {
+          "PFL": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3201209": {
+        "NOME": "cachoeiro de itapemirim",
+        "SIGLAS": {
+          "PFL": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PT do B": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3201308": {
+        "NOME": "cariacica",
+        "SIGLAS": {
+          "PFL": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PL": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          }
+        }
+      },
+      "3201407": {
+        "NOME": "castelo",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PFL": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3201506": {
+        "NOME": "colatina",
+        "SIGLAS": {
+          "PFL": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PL": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3201605": {
+        "NOME": "conceicao da barra",
+        "SIGLAS": {
+          "PHS": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PSL": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3201704": {
+        "NOME": "conceicao do castelo",
+        "SIGLAS": {
+          "PL": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3201803": {
+        "NOME": "divino de sao lourenco",
+        "SIGLAS": {
+          "PFL": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3201902": {
+        "NOME": "domingos martins",
+        "SIGLAS": {
+          "PFL": {
+            "ORIENTACAO": 6,
+            "N": 2
+          },
+          "PL": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3202009": {
+        "NOME": "dores do rio preto",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PFL": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3202108": {
+        "NOME": "ecoporanga",
+        "SIGLAS": {
+          "PC do B": {
+            "ORIENTACAO": 2,
+            "N": 1
+          },
+          "PFL": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          }
+        }
+      },
+      "3202207": {
+        "NOME": "fundao",
+        "SIGLAS": {
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3202256": {
+        "NOME": "governador lindenberg",
+        "SIGLAS": {
+          "PL": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 3
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          }
+        }
+      },
+      "3202306": {
+        "NOME": "guacui",
+        "SIGLAS": {
+          "PHS": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3202405": {
+        "NOME": "guarapari",
+        "SIGLAS": {
+          "PAN": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PHS": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3202454": {
+        "NOME": "ibatiba",
+        "SIGLAS": {
+          "PL": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PTC": {
+            "ORIENTACAO": 6,
+            "N": 2
+          }
+        }
+      },
+      "3202504": {
+        "NOME": "ibiracu",
+        "SIGLAS": {
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3202553": {
+        "NOME": "ibitirama",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 3
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          }
+        }
+      },
+      "3202603": {
+        "NOME": "iconha",
+        "SIGLAS": {
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3202652": {
+        "NOME": "irupi",
+        "SIGLAS": {
+          "PFL": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 3
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          }
+        }
+      },
+      "3202702": {
+        "NOME": "itaguacu",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PFL": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PL": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3202801": {
+        "NOME": "itapemirim",
+        "SIGLAS": {
+          "PFL": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PSL": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3202900": {
+        "NOME": "itarana",
+        "SIGLAS": {
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3203007": {
+        "NOME": "iuna",
+        "SIGLAS": {
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PRONA": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT do B": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3203056": {
+        "NOME": "jaguare",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3203106": {
+        "NOME": "jeronimo monteiro",
+        "SIGLAS": {
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PRTB": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          }
+        }
+      },
+      "3203130": {
+        "NOME": "joao neiva",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          }
+        }
+      },
+      "3203163": {
+        "NOME": "laranja da terra",
+        "SIGLAS": {
+          "PFL": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PL": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3203205": {
+        "NOME": "linhares",
+        "SIGLAS": {
+          "PHS": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PL": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSL": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PTN": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3203304": {
+        "NOME": "mantenopolis",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PRTB": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3203320": {
+        "NOME": "marataizes",
+        "SIGLAS": {
+          "PFL": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PRONA": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3203346": {
+        "NOME": "marechal floriano",
+        "SIGLAS": {
+          "PL": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3203353": {
+        "NOME": "marilandia",
+        "SIGLAS": {
+          "PL": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3203403": {
+        "NOME": "mimoso do sul",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PFL": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3203502": {
+        "NOME": "montanha",
+        "SIGLAS": {
+          "PL": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3203601": {
+        "NOME": "mucurici",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3203700": {
+        "NOME": "muniz freire",
+        "SIGLAS": {
+          "PL": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3203809": {
+        "NOME": "muqui",
+        "SIGLAS": {
+          "PL": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3203908": {
+        "NOME": "nova venecia",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PL": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          }
+        }
+      },
+      "3204005": {
+        "NOME": "pancas",
+        "SIGLAS": {
+          "PL": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PRTB": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3204054": {
+        "NOME": "pedro canario",
+        "SIGLAS": {
+          "PL": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PRTB": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3204104": {
+        "NOME": "pinheiros",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PFL": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PL": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3204203": {
+        "NOME": "piuma",
+        "SIGLAS": {
+          "PC do B": {
+            "ORIENTACAO": 2,
+            "N": 1
+          },
+          "PL": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTN": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3204252": {
+        "NOME": "ponto belo",
+        "SIGLAS": {
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 3
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          }
+        }
+      },
+      "3204302": {
+        "NOME": "presidente kennedy",
+        "SIGLAS": {
+          "PL": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PRONA": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PTC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          }
+        }
+      },
+      "3204351": {
+        "NOME": "rio bananal",
+        "SIGLAS": {
+          "PFL": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 3
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3204401": {
+        "NOME": "rio novo do sul",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PL": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3204500": {
+        "NOME": "santa leopoldina",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 3
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3204609": {
+        "NOME": "santa teresa",
+        "SIGLAS": {
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PRTB": {
+            "ORIENTACAO": 6,
+            "N": 2
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PSDC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          }
+        }
+      },
+      "3204708": {
+        "NOME": "sao gabriel da palha",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PHS": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT do B": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3204807": {
+        "NOME": "sao jose do calcado",
+        "SIGLAS": {
+          "PFL": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PSDC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3204906": {
+        "NOME": "sao mateus",
+        "SIGLAS": {
+          "PAN": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PC do B": {
+            "ORIENTACAO": 2,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PTC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          }
+        }
+      },
+      "3204955": {
+        "NOME": "sao roque do canaa",
+        "SIGLAS": {
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          }
+        }
+      },
+      "3205002": {
+        "NOME": "serra",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 3
+          },
+          "PL": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PRTB": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3205010": {
+        "NOME": "sooretama",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT do B": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3205036": {
+        "NOME": "vargem alta",
+        "SIGLAS": {
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3205069": {
+        "NOME": "venda nova do imigrante",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 3
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3205101": {
+        "NOME": "viana",
+        "SIGLAS": {
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PSL": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3205150": {
+        "NOME": "vila pavao",
+        "SIGLAS": {
+          "PL": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 3
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3205176": {
+        "NOME": "vila valerio",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3205200": {
+        "NOME": "vila velha",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PL": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PRONA": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PTC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          }
+        }
+      },
+      "3205309": {
+        "NOME": "vitoria",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PL": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          }
+        }
+      }
+    },
+    "2008": {
+      "3200102": {
+        "NOME": "afonso claudio",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PRB": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3200201": {
+        "NOME": "alegre",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PHS": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PSDC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3200300": {
+        "NOME": "alfredo chaves",
+        "SIGLAS": {
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 3
+          }
+        }
+      },
+      "3200359": {
+        "NOME": "alto rio novo",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          }
+        }
+      },
+      "3200409": {
+        "NOME": "anchieta",
+        "SIGLAS": {
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PRP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3200508": {
+        "NOME": "apiaca",
+        "SIGLAS": {
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3200607": {
+        "NOME": "aracruz",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 3
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3200706": {
+        "NOME": "atilio vivacqua",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3200805": {
+        "NOME": "baixo guandu",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PRP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PRTB": {
+            "ORIENTACAO": 6,
+            "N": 1
+          }
+        }
+      },
+      "3200904": {
+        "NOME": "barra de sao francisco",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PRTB": {
+            "ORIENTACAO": 6,
+            "N": 2
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          }
+        }
+      },
+      "3201001": {
+        "NOME": "boa esperanca",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3201100": {
+        "NOME": "bom jesus do norte",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3201159": {
+        "NOME": "brejetuba",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3201209": {
+        "NOME": "cachoeiro de itapemirim",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3201308": {
+        "NOME": "cariacica",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 3
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3201407": {
+        "NOME": "castelo",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3201506": {
+        "NOME": "colatina",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3201605": {
+        "NOME": "conceicao da barra",
+        "SIGLAS": {
+          "PHS": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PSL": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3201704": {
+        "NOME": "conceicao do castelo",
+        "SIGLAS": {
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3201803": {
+        "NOME": "divino de sao lourenco",
+        "SIGLAS": {
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PRTB": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PTC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3201902": {
+        "NOME": "domingos martins",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PC do B": {
+            "ORIENTACAO": 2,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          }
+        }
+      },
+      "3202009": {
+        "NOME": "dores do rio preto",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3202108": {
+        "NOME": "ecoporanga",
+        "SIGLAS": {
+          "PC do B": {
+            "ORIENTACAO": 2,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSL": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3202207": {
+        "NOME": "fundao",
+        "SIGLAS": {
+          "PC do B": {
+            "ORIENTACAO": 2,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PRB": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          }
+        }
+      },
+      "3202256": {
+        "NOME": "governador lindenberg",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3202405": {
+        "NOME": "guarapari",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PRP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          }
+        }
+      },
+      "3202306": {
+        "NOME": "guacui",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          }
+        }
+      },
+      "3202454": {
+        "NOME": "ibatiba",
+        "SIGLAS": {
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 3
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PTC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          }
+        }
+      },
+      "3202504": {
+        "NOME": "ibiracu",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3202553": {
+        "NOME": "ibitirama",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3202603": {
+        "NOME": "iconha",
+        "SIGLAS": {
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 3
+          }
+        }
+      },
+      "3202652": {
+        "NOME": "irupi",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 3
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 2
+          }
+        }
+      },
+      "3202702": {
+        "NOME": "itaguacu",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PT do B": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3202801": {
+        "NOME": "itapemirim",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PRP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3202900": {
+        "NOME": "itarana",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          }
+        }
+      },
+      "3203007": {
+        "NOME": "iuna",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3203056": {
+        "NOME": "jaguare",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3203106": {
+        "NOME": "jeronimo monteiro",
+        "SIGLAS": {
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3203130": {
+        "NOME": "joao neiva",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 2
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          }
+        }
+      },
+      "3203163": {
+        "NOME": "laranja da terra",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3203205": {
+        "NOME": "linhares",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PRB": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3203304": {
+        "NOME": "mantenopolis",
+        "SIGLAS": {
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PRB": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PRP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTN": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3203320": {
+        "NOME": "marataizes",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3203346": {
+        "NOME": "marechal floriano",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3203353": {
+        "NOME": "marilandia",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PRP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          }
+        }
+      },
+      "3203403": {
+        "NOME": "mimoso do sul",
+        "SIGLAS": {
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSL": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3203502": {
+        "NOME": "montanha",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3203601": {
+        "NOME": "mucurici",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 4
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3203700": {
+        "NOME": "muniz freire",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PT do B": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3203809": {
+        "NOME": "muqui",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PT do B": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3203908": {
+        "NOME": "nova venecia",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3204005": {
+        "NOME": "pancas",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3204054": {
+        "NOME": "pedro canario",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PRB": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3204104": {
+        "NOME": "pinheiros",
+        "SIGLAS": {
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTN": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3204203": {
+        "NOME": "piuma",
+        "SIGLAS": {
+          "PC do B": {
+            "ORIENTACAO": 2,
+            "N": 2
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PRP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3204252": {
+        "NOME": "ponto belo",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PRB": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3204302": {
+        "NOME": "presidente kennedy",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          }
+        }
+      },
+      "3204351": {
+        "NOME": "rio bananal",
+        "SIGLAS": {
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 3
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3204401": {
+        "NOME": "rio novo do sul",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PRTB": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3204500": {
+        "NOME": "santa leopoldina",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3204559": {
+        "NOME": "santa maria de jetiba",
+        "SIGLAS": {
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PRTB": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3204609": {
+        "NOME": "santa teresa",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3205002": {
+        "NOME": "serra",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 4
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDC": {
+            "ORIENTACAO": 6,
+            "N": 2
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PT do B": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PTN": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3205010": {
+        "NOME": "sooretama",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PT do B": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3204658": {
+        "NOME": "sao domingos do norte",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PT do B": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3204708": {
+        "NOME": "sao gabriel da palha",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PT do B": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3204807": {
+        "NOME": "sao jose do calcado",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          }
+        }
+      },
+      "3204906": {
+        "NOME": "sao mateus",
+        "SIGLAS": {
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PSL": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PT do B": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3204955": {
+        "NOME": "sao roque do canaa",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PHS": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3205036": {
+        "NOME": "vargem alta",
+        "SIGLAS": {
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3205069": {
+        "NOME": "venda nova do imigrante",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3205101": {
+        "NOME": "viana",
+        "SIGLAS": {
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PSL": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3205150": {
+        "NOME": "vila pavao",
+        "SIGLAS": {
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3205176": {
+        "NOME": "vila valerio",
+        "SIGLAS": {
+          "PHS": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          }
+        }
+      },
+      "3205200": {
+        "NOME": "vila velha",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PRP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PT do B": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3205309": {
+        "NOME": "vitoria",
+        "SIGLAS": {
+          "PC do B": {
+            "ORIENTACAO": 2,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PT do B": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3200169": {
+        "NOME": "agua doce do norte",
+        "SIGLAS": {
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 3
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3200136": {
+        "NOME": "aguia branca",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      }
+    },
+    "2012": {
+      "3200102": {
+        "NOME": "afonso claudio",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PRB": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3200201": {
+        "NOME": "alegre",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PC do B": {
+            "ORIENTACAO": 2,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PHS": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PRP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PTC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 2
+          }
+        }
+      },
+      "3200300": {
+        "NOME": "alfredo chaves",
+        "SIGLAS": {
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 5
+          }
+        }
+      },
+      "3200359": {
+        "NOME": "alto rio novo",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3200409": {
+        "NOME": "anchieta",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 3
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PT do B": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3200508": {
+        "NOME": "apiaca",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PRP": {
+            "ORIENTACAO": 5,
+            "N": 4
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3200607": {
+        "NOME": "aracruz",
+        "SIGLAS": {
+          "PC do B": {
+            "ORIENTACAO": 2,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 4
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PRB": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PRP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3200706": {
+        "NOME": "atilio vivacqua",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3200805": {
+        "NOME": "baixo guandu",
+        "SIGLAS": {
+          "PC do B": {
+            "ORIENTACAO": 2,
+            "N": 3
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PRP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          }
+        }
+      },
+      "3200904": {
+        "NOME": "barra de sao francisco",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3201001": {
+        "NOME": "boa esperanca",
+        "SIGLAS": {
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PRB": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3201100": {
+        "NOME": "bom jesus do norte",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PPL": {
+            "ORIENTACAO": 2,
+            "N": 1
+          },
+          "PRP": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          }
+        }
+      },
+      "3201159": {
+        "NOME": "brejetuba",
+        "SIGLAS": {
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 3
+          }
+        }
+      },
+      "3201209": {
+        "NOME": "cachoeiro de itapemirim",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PHS": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 3
+          },
+          "PRB": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 3
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 3
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 2
+          }
+        }
+      },
+      "3201308": {
+        "NOME": "cariacica",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 3
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PRB": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PRTB": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 4
+          },
+          "PT do B": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 2
+          }
+        }
+      },
+      "3201407": {
+        "NOME": "castelo",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 3
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 3
+          }
+        }
+      },
+      "3201506": {
+        "NOME": "colatina",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          }
+        }
+      },
+      "3201605": {
+        "NOME": "conceicao da barra",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PRB": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PRP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          }
+        }
+      },
+      "3201704": {
+        "NOME": "conceicao do castelo",
+        "SIGLAS": {
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PRB": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3201803": {
+        "NOME": "divino de sao lourenco",
+        "SIGLAS": {
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3201902": {
+        "NOME": "domingos martins",
+        "SIGLAS": {
+          "PC do B": {
+            "ORIENTACAO": 2,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 3
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3202009": {
+        "NOME": "dores do rio preto",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3202108": {
+        "NOME": "ecoporanga",
+        "SIGLAS": {
+          "PC do B": {
+            "ORIENTACAO": 2,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PT do B": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PTN": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3202207": {
+        "NOME": "fundao",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PRB": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3202256": {
+        "NOME": "governador lindenberg",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3202405": {
+        "NOME": "guarapari",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PRP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PTN": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3202306": {
+        "NOME": "guacui",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PHS": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          }
+        }
+      },
+      "3202454": {
+        "NOME": "ibatiba",
+        "SIGLAS": {
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3202504": {
+        "NOME": "ibiracu",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PTC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3202553": {
+        "NOME": "ibitirama",
+        "SIGLAS": {
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          }
+        }
+      },
+      "3202603": {
+        "NOME": "iconha",
+        "SIGLAS": {
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 3
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 3
+          }
+        }
+      },
+      "3202652": {
+        "NOME": "irupi",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 4
+          },
+          "PTN": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3202702": {
+        "NOME": "itaguacu",
+        "SIGLAS": {
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PT do B": {
+            "ORIENTACAO": 3,
+            "N": 2
+          }
+        }
+      },
+      "3202801": {
+        "NOME": "itapemirim",
+        "SIGLAS": {
+          "PHS": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PRP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3202900": {
+        "NOME": "itarana",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3203007": {
+        "NOME": "iuna",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 3
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 3
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PRB": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3203056": {
+        "NOME": "jaguare",
+        "SIGLAS": {
+          "PHS": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 3
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 3
+          }
+        }
+      },
+      "3203106": {
+        "NOME": "jeronimo monteiro",
+        "SIGLAS": {
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PRB": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 2
+          }
+        }
+      },
+      "3203130": {
+        "NOME": "joao neiva",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PRB": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 2
+          }
+        }
+      },
+      "3203163": {
+        "NOME": "laranja da terra",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 3
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3203205": {
+        "NOME": "linhares",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PPL": {
+            "ORIENTACAO": 2,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PRB": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 2
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PTN": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3203304": {
+        "NOME": "mantenopolis",
+        "SIGLAS": {
+          "PC do B": {
+            "ORIENTACAO": 2,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTN": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3203320": {
+        "NOME": "marataizes",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PRB": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PRP": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 2
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3203346": {
+        "NOME": "marechal floriano",
+        "SIGLAS": {
+          "PHS": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PRTB": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3203353": {
+        "NOME": "marilandia",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 3
+          },
+          "PRP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3203403": {
+        "NOME": "mimoso do sul",
+        "SIGLAS": {
+          "PHS": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PRP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSL": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 2
+          }
+        }
+      },
+      "3203502": {
+        "NOME": "montanha",
+        "SIGLAS": {
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 3
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          }
+        }
+      },
+      "3203601": {
+        "NOME": "mucurici",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PHS": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 3
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3203700": {
+        "NOME": "muniz freire",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PRP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PT do B": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 3
+          }
+        }
+      },
+      "3203809": {
+        "NOME": "muqui",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PT do B": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3203908": {
+        "NOME": "nova venecia",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 3
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PRP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 3
+          },
+          "PSDC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          }
+        }
+      },
+      "3204005": {
+        "NOME": "pancas",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PRP": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PSL": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          }
+        }
+      },
+      "3204054": {
+        "NOME": "pedro canario",
+        "SIGLAS": {
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PRB": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PRTB": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 3
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          }
+        }
+      },
+      "3204104": {
+        "NOME": "pinheiros",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PPL": {
+            "ORIENTACAO": 2,
+            "N": 1
+          },
+          "PRP": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3204203": {
+        "NOME": "piuma",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PC do B": {
+            "ORIENTACAO": 2,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PRB": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PRP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3204252": {
+        "NOME": "ponto belo",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3204302": {
+        "NOME": "presidente kennedy",
+        "SIGLAS": {
+          "PHS": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 2
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PTC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3204351": {
+        "NOME": "rio bananal",
+        "SIGLAS": {
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 3
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 3
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 3
+          }
+        }
+      },
+      "3204401": {
+        "NOME": "rio novo do sul",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 3
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 1
+          }
+        }
+      },
+      "3204500": {
+        "NOME": "santa leopoldina",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3204559": {
+        "NOME": "santa maria de jetiba",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 3
+          },
+          "PHS": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3204609": {
+        "NOME": "santa teresa",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 3
+          }
+        }
+      },
+      "3205002": {
+        "NOME": "serra",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 5
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PRB": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSL": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PT do B": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PTC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PTN": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3205010": {
+        "NOME": "sooretama",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PPL": {
+            "ORIENTACAO": 2,
+            "N": 1
+          },
+          "PSDC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3204658": {
+        "NOME": "sao domingos do norte",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 3
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3204708": {
+        "NOME": "sao gabriel da palha",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PRP": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          }
+        }
+      },
+      "3204807": {
+        "NOME": "sao jose do calcado",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3204906": {
+        "NOME": "sao mateus",
+        "SIGLAS": {
+          "PC do B": {
+            "ORIENTACAO": 2,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PHS": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 4
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3204955": {
+        "NOME": "sao roque do canaa",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 3
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3205036": {
+        "NOME": "vargem alta",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 3
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3205069": {
+        "NOME": "venda nova do imigrante",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 3
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PV": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3205101": {
+        "NOME": "viana",
+        "SIGLAS": {
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 3
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSL": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          }
+        }
+      },
+      "3205150": {
+        "NOME": "vila pavao",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3205176": {
+        "NOME": "vila valerio",
+        "SIGLAS": {
+          "PC do B": {
+            "ORIENTACAO": 2,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PRB": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      },
+      "3205200": {
+        "NOME": "vila velha",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PMN": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PT do B": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTC": {
+            "ORIENTACAO": 6,
+            "N": 1
+          },
+          "PTN": {
+            "ORIENTACAO": 4,
+            "N": 2
+          }
+        }
+      },
+      "3205309": {
+        "NOME": "vitoria",
+        "SIGLAS": {
+          "PC do B": {
+            "ORIENTACAO": 2,
+            "N": 1
+          },
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PHS": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          },
+          "PPS": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PRB": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PRP": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 2
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 2
+          }
+        }
+      },
+      "3200169": {
+        "NOME": "agua doce do norte",
+        "SIGLAS": {
+          "DEM": {
+            "ORIENTACAO": 5,
+            "N": 2
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 3
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PT do B": {
+            "ORIENTACAO": 3,
+            "N": 1
+          }
+        }
+      },
+      "3200136": {
+        "NOME": "aguia branca",
+        "SIGLAS": {
+          "PDT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PMDB": {
+            "ORIENTACAO": 4,
+            "N": 2
+          },
+          "PPL": {
+            "ORIENTACAO": 2,
+            "N": 1
+          },
+          "PR": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PSB": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PSD": {
+            "ORIENTACAO": 5,
+            "N": 1
+          },
+          "PT": {
+            "ORIENTACAO": 3,
+            "N": 1
+          },
+          "PTB": {
+            "ORIENTACAO": 4,
+            "N": 1
+          }
+        }
+      }
+    }
+  }
+}
