@@ -51,3 +51,8 @@ Push em `master` dispara o workflow GitHub Actions que executa testes, build e p
 ## Legado
 
 Os arquivos `mapa.js`, `sankey.js`, `camara.js` e `index.html` na raiz do repositório (site antigo) permanecem como referência até o merge em `master`.
+
+
+## Contato
+
+[gazbr234@gmail.com](mailto:gazbr234@gmail.com)
